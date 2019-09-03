@@ -5,40 +5,37 @@ plugins:
 sources:
 
   ice_area_aggregate_20C:
-    description: 20th Century Daily ice area (aggregate)
+    description: 20C daily ice area (aggregate)
     driver: zarr
     args:
-      urlpath: 'ncar-cesm-lens/ice_sh/daily/cesmLE-20C-aice_d.zarr'
+      urlpath: "s3://ncar-cesm-lens/ice_sh/daily/cesmLE-20C-aice_d.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  grid_cellmean_ice_thickness_20C:
+    description: 20C daily grid cellmean ice thickness
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ice_sh/daily/cesmLE-20C-hi_d.zarr"
       storage_options:
         anon: True
       consolidated: True
 
   ice_area_aggregate_RCP85:
-    description: RCP8.5 - Representative Concentration Pathway 8.5 Daily ice area (aggregate)
+    description: RCP85 daily ice area (aggregate)
     driver: zarr
     args:
-      urlpath: 'ncar-cesm-lens/ice_sh/daily/cesmLE-RCP85-aice_d.zarr'
-      storage_options:
-        anon: True
-      consolidated: True
-
-
-
-
-  grid_cellmean_ice_thickness_20C:
-    description: 20th Century Daily grid cellmean ice thickness
-    driver: zarr
-    args:
-      urlpath: 'ncar-cesm-lens/ice_sh/daily/cesmLE-20C-hi_d.zarr'
+      urlpath: "s3://ncar-cesm-lens/ice_sh/daily/cesmLE-RCP85-aice_d.zarr"
       storage_options:
         anon: True
       consolidated: True
 
   grid_cellmean_ice_thickness_RCP85:
-    description: RCP8.5 - Representative Concentration Pathway 8.5 Daily grid cellmean ice thickness
+    description: RCP85 daily grid cellmean ice thickness
     driver: zarr
     args:
-      urlpath: 'ncar-cesm-lens/ice_sh/daily/cesmLE-RCP85-hi_d.zarr'
+      urlpath: "s3://ncar-cesm-lens/ice_sh/daily/cesmLE-RCP85-hi_d.zarr"
       storage_options:
         anon: True
       consolidated: True

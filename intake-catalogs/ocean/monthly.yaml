@@ -5,82 +5,82 @@ plugins:
 sources:
 
   salinity_20C:
-    description: 20th Century Monthly 3D Salinity
+    description: 20C monthly 3D Salinity
     driver: zarr
     args:
-      urlpath: 's3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SALT.zarr'
-      storage_options:
-        anon: True
-      consolidated: True
-
-  salinity_RCP85:
-    description: RCP8.5 - Representative Concentration Pathway 8.5 Monthly 3D Salinity
-    driver: zarr
-    args:
-      urlpath: 's3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SALT.zarr'
-      storage_options:
-        anon: True
-      consolidated: True
-
-  salinity_CTRL:
-    description: Pre-Industrial Fully Coupled Control Monthly 3D Salinity
-    driver: zarr
-    args:
-      urlpath: 's3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SALT.zarr'
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SALT.zarr"
       storage_options:
         anon: True
       consolidated: True
 
   sea_surface_height_20C:
-    description: 20th Century Monthly Sea Surface Height
+    description: 20C monthly Sea Surface Height
     driver: zarr
     args:
-      urlpath: 's3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SSH.zarr'
-      storage_options:
-        anon: True
-      consolidated: True
-
-  sea_surface_height_RCP85:
-    description: RCP8.5 - Representative Concentration Pathway 8.5 Monthly Sea Surface Height
-    driver: zarr
-    args:
-      urlpath: 's3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SSH.zarr'
-      storage_options:
-        anon: True
-      consolidated: True
-
-  sea_surface_height_CTRL:
-    description: Pre-Industrial Fully Coupled Control Monthly Sea Surface Height
-    driver: zarr
-    args:
-      urlpath: 's3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SSH.zarr'
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SSH.zarr"
       storage_options:
         anon: True
       consolidated: True
 
   potential_temperature_20C:
-    description: 20th Century Monthly Potential Temperature
+    description: 20C monthly Potential Temperature
     driver: zarr
     args:
-      urlpath: 's3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SST.zarr'
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SST.zarr"
       storage_options:
         anon: True
       consolidated: True
 
-  potential_temperature_RCP85:
-    description: RCP8.5 - Representative Concentration Pathway 8.5 Monthly Potential Temperature
+  salinity_CTRL:
+    description: CTRL monthly 3D Salinity
     driver: zarr
     args:
-      urlpath: 's3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SST.zarr'
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SALT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  sea_surface_height_CTRL:
+    description: CTRL monthly Sea Surface Height
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SSH.zarr"
       storage_options:
         anon: True
       consolidated: True
 
   potential_temperature_CTRL:
-    description: Pre-Industrial Fully Coupled Control Monthly Potential Temperature
+    description: CTRL monthly Potential Temperature
     driver: zarr
     args:
-      urlpath: 's3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SST.zarr'
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SST.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  salinity_RCP85:
+    description: RCP85 monthly 3D Salinity
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SALT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  sea_surface_height_RCP85:
+    description: RCP85 monthly Sea Surface Height
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SSH.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  potential_temperature_RCP85:
+    description: RCP85 monthly Potential Temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SST.zarr"
       storage_options:
         anon: True
       consolidated: True

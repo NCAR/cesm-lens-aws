@@ -5,56 +5,37 @@ plugins:
 sources:
 
   ice_area_aggregate_20C:
-    description: 20th Century Monthly ice area (aggregate)
+    description: 20C monthly ice area (aggregate)
     driver: zarr
     args:
-      urlpath: 'ncar-cesm-lens/ice_sh/monthly/cesmLE-20C-aice.zarr'
+      urlpath: "s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-20C-aice.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  grid_cellmean_ice_thickness_20C:
+    description: 20C monthly grid cellmean ice thickness
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-20C-hi.zarr"
       storage_options:
         anon: True
       consolidated: True
 
   ice_area_aggregate_RCP85:
-    description: RCP8.5 - Representative Concentration Pathway 8.5 Monthly ice area (aggregate)
+    description: RCP85 monthly ice area (aggregate)
     driver: zarr
     args:
-      urlpath: 'ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-aice.zarr'
-      storage_options:
-        anon: True
-      consolidated: True
-
-  ice_area_aggregate_CTRL:
-    description: Pre-Industrial Fully Coupled Control Monthly ice area (aggregate)
-    driver: zarr
-    args:
-      urlpath: 'ncar-cesm-lens/ice_sh/monthly/cesmLE-CTRL-aice.zarr'
-      storage_options:
-        anon: True
-      consolidated: True
-
-
-  grid_cellmean_ice_thickness_20C:
-    description: 20th Century Monthly grid cellmean ice thickness
-    driver: zarr
-    args:
-      urlpath: 'ncar-cesm-lens/ice_sh/monthly/cesmLE-20C-hi.zarr'
+      urlpath: "s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-aice.zarr"
       storage_options:
         anon: True
       consolidated: True
 
   grid_cellmean_ice_thickness_RCP85:
-    description: RCP8.5 - Representative Concentration Pathway 8.5 Monthly grid cellmean ice thickness
+    description: RCP85 monthly grid cellmean ice thickness
     driver: zarr
     args:
-      urlpath: 'ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr'
-      storage_options:
-        anon: True
-      consolidated: True
-
-  grid_cellmean_ice_thickness_CTRL:
-    description: Pre-Industrial Fully Coupled Control Monthly grid cellmean ice thickness
-    driver: zarr
-    args:
-      urlpath: 'ncar-cesm-lens/ice_sh/monthly/cesmLE-CTRL-hi.zarr'
+      urlpath: "s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr"
       storage_options:
         anon: True
       consolidated: True
