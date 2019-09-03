@@ -1,0 +1,437 @@
+plugins:
+  source:
+    - module: intake_xarray
+
+sources:
+
+  net_longwave_flux_at_surface_20C:
+    description: 20C daily Net longwave flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  clearsky_net_longwave_flux_at_surface_20C:
+    description: 20C daily Clearsky net longwave flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNSC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  upwelling_longwave_flux_at_top_of_model_20C:
+    description: 20C daily Upwelling longwave flux at top of model
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLUT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  net_solar_flux_at_surface_20C:
+    description: 20C daily Net solar flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  clearsky_net_solar_flux_at_surface_20C:
+    description: 20C daily Clearsky net solar flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNSC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  net_solar_flux_at_top_of_atmosphere_20C:
+    description: 20C daily Net solar flux at top of atmosphere
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNTOA.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  fraction_of_sfc_area_covered_by_sea_ice_20C:
+    description: 20C daily Fraction of sfc area covered by sea-ice
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-ICEFRAC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_latent_heat_flux_20C:
+    description: 20C daily Surface latent heat flux
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-LHFLX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  large_scale_stable_precipitation_rate_20C:
+    description: 20C daily Large-scale (stable) precipitation rate (liq + ice)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  convective_snow_rate_water_equivalent_20C:
+    description: 20C daily Convective snow rate (water equivalent)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECSC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  large_scale_stable_snow_rate_water_equivalent_20C:
+    description: 20C daily Large-scale (stable) snow rate (water equivalent)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECSL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  total_convective_and_large_scale_precipitation_rate_20C:
+    description: 20C daily Total (convective and large-scale) precipitation rate (liq + ice)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  maximum_convective_and_large_scale_precipitation_rate_20C:
+    description: 20C daily Maximum (convective and large-scale) precipitation rate (liq+ice)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECTMX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  sea_level_pressure_20C:
+    description: 20C daily Sea level pressure
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PSL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  specific_humidity_at_850_mbar_pressure_surface_20C:
+    description: 20C daily Specific Humidity at 850 mbar pressure surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-Q850.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_sensible_heat_flux_20C:
+    description: 20C daily Surface sensible heat flux
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-SHFLX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  total_vertically_integrated_precipitable_water_20C:
+    description: 20C daily Total (vertically integrated) precipitable water
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TMQ.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  reference_height_temperature_20C:
+    description: 20C daily Reference height temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TREFHT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  minimum_reference_height_temperature_over_output_period_20C:
+    description: 20C daily Minimum reference height temperature over output period
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TREFHTMN.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  maximum_reference_height_temperature_over_output_period_20C:
+    description: 20C daily Maximum reference height temperature over output period
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TREFHTMX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_temperature_radiative_20C:
+    description: 20C daily Surface temperature (radiative)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  lowest_model_level_zonal_wind_20C:
+    description: 20C daily Lowest model level zonal wind
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-UBOT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  horizontal_total_wind_speed_average_at_the_surface_20C:
+    description: 20C daily Horizontal total wind speed average at the surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-WSPDSRFAV.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  geopotential_z_at_500_mbar_pressure_surface_20C:
+    description: 20C daily Geopotential Z at 500 mbar pressure surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-20C-Z500.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  net_longwave_flux_at_surface_RCP85:
+    description: RCP85 daily Net longwave flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  clearsky_net_longwave_flux_at_surface_RCP85:
+    description: RCP85 daily Clearsky net longwave flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNSC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  upwelling_longwave_flux_at_top_of_model_RCP85:
+    description: RCP85 daily Upwelling longwave flux at top of model
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLUT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  net_solar_flux_at_surface_RCP85:
+    description: RCP85 daily Net solar flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FSNS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  clearsky_net_solar_flux_at_surface_RCP85:
+    description: RCP85 daily Clearsky net solar flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FSNSC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  net_solar_flux_at_top_of_atmosphere_RCP85:
+    description: RCP85 daily Net solar flux at top of atmosphere
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FSNTOA.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  fraction_of_sfc_area_covered_by_sea_ice_RCP85:
+    description: RCP85 daily Fraction of sfc area covered by sea-ice
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-ICEFRAC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_latent_heat_flux_RCP85:
+    description: RCP85 daily Surface latent heat flux
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-LHFLX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  large_scale_stable_precipitation_rate_RCP85:
+    description: RCP85 daily Large-scale (stable) precipitation rate (liq + ice)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  convective_snow_rate_water_equivalent_RCP85:
+    description: RCP85 daily Convective snow rate (water equivalent)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECSC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  large_scale_stable_snow_rate_water_equivalent_RCP85:
+    description: RCP85 daily Large-scale (stable) snow rate (water equivalent)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECSL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  total_convective_and_large_scale_precipitation_rate_RCP85:
+    description: RCP85 daily Total (convective and large-scale) precipitation rate (liq + ice)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  maximum_convective_and_large_scale_precipitation_rate_RCP85:
+    description: RCP85 daily Maximum (convective and large-scale) precipitation rate (liq+ice)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECTMX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  sea_level_pressure_RCP85:
+    description: RCP85 daily Sea level pressure
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PSL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  specific_humidity_at_850_mbar_pressure_surface_RCP85:
+    description: RCP85 daily Specific Humidity at 850 mbar pressure surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-Q850.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_sensible_heat_flux_RCP85:
+    description: RCP85 daily Surface sensible heat flux
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-SHFLX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  total_vertically_integrated_precipitable_water_RCP85:
+    description: RCP85 daily Total (vertically integrated) precipitable water
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TMQ.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  reference_height_temperature_RCP85:
+    description: RCP85 daily Reference height temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  minimum_reference_height_temperature_over_output_period_RCP85:
+    description: RCP85 daily Minimum reference height temperature over output period
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHTMN.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  maximum_reference_height_temperature_over_output_period_RCP85:
+    description: RCP85 daily Maximum reference height temperature over output period
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHTMX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_temperature_radiative_RCP85:
+    description: RCP85 daily Surface temperature (radiative)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  lowest_model_level_zonal_wind_RCP85:
+    description: RCP85 daily Lowest model level zonal wind
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-UBOT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  horizontal_total_wind_speed_average_at_the_surface_RCP85:
+    description: RCP85 daily Horizontal total wind speed average at the surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-WSPDSRFAV.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  geopotential_z_at_500_mbar_pressure_surface_RCP85:
+    description: RCP85 daily Geopotential Z at 500 mbar pressure surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-Z500.zarr"
+      storage_options:
+        anon: True
+      consolidated: True

@@ -1,0 +1,86 @@
+plugins:
+  source:
+    - module: intake_xarray
+
+sources:
+
+  salinity_20C:
+    description: 20C monthly 3D Salinity
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SALT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  sea_surface_height_20C:
+    description: 20C monthly Sea Surface Height
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SSH.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  potential_temperature_20C:
+    description: 20C monthly Potential Temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SST.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  salinity_CTRL:
+    description: CTRL monthly 3D Salinity
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SALT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  sea_surface_height_CTRL:
+    description: CTRL monthly Sea Surface Height
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SSH.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  potential_temperature_CTRL:
+    description: CTRL monthly Potential Temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SST.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  salinity_RCP85:
+    description: RCP85 monthly 3D Salinity
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SALT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  sea_surface_height_RCP85:
+    description: RCP85 monthly Sea Surface Height
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SSH.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  potential_temperature_RCP85:
+    description: RCP85 monthly Potential Temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SST.zarr"
+      storage_options:
+        anon: True
+      consolidated: True

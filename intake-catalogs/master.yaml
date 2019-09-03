@@ -1,0 +1,74 @@
+description: 'NCAR Community Earth System Model Large Ensemble (CESM LENS) on AWS Master Data Catalog'
+sources:
+
+  ocean_monthly:
+    args:
+      path: "{{ CATALOG_DIR }}/ocean/monthly.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  ice_northern_hemisphere_monthly:
+    args:
+      path: "{{ CATALOG_DIR }}/ice_nh/monthly.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  ice_northern_hemisphere_daily:
+    args:
+      path: "{{ CATALOG_DIR }}/ice_nh/daily.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  ice_southern_hemisphere_monthly:
+    args:
+      path: "{{ CATALOG_DIR }}/ice_sh/monthly.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  ice_southern_hemisphere_daily:
+    args:
+      path: "{{ CATALOG_DIR }}/ice_sh/daily.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  land_monthly:
+    args:
+      path: "{{ CATALOG_DIR }}/land/monthly.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  land_daily:
+    args:
+      path: "{{ CATALOG_DIR }}/land/daily.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  atmosphere_daily:
+    args:
+      path: "{{ CATALOG_DIR }}/atmosphere/daily.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  atmosphere_monthly:
+    args:
+      path: "{{ CATALOG_DIR }}/atmosphere/monthly.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  atmosphere_hourly6_1990_2005:
+    args:
+      path: "{{ CATALOG_DIR }}/atmosphere/hourly6_1990_2005.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  atmosphere_hourly6_2026_2035:
+    args:
+      path: "{{ CATALOG_DIR }}/atmosphere/hourly6_2026_2035.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  atmosphere_hourly6_2071_2080:
+    args:
+      path: "{{ CATALOG_DIR }}/atmosphere/hourly6_2071_2080.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
