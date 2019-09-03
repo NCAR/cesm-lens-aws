@@ -1,0 +1,104 @@
+plugins:
+  source:
+    - module: intake_xarray
+
+sources:
+
+  total_convective_and_large_scale_precipitation_rate_20C:
+    description: 20C hourly6-1990-2005 Total (convective and large-scale) precipitation rate (liq + ice)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-PRECT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_pressure_20C:
+    description: 20C hourly6-1990-2005 Surface pressure
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-PS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  sea_level_pressure_20C:
+    description: 20C hourly6-1990-2005 Sea level pressure
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-PSL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  specific_humidity_20C:
+    description: 20C hourly6-1990-2005 3D Specific humidity
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-Q.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  reference_height_humidity_20C:
+    description: 20C hourly6-1990-2005 Reference height humidity
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-QREFHT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  temperature_20C:
+    description: 20C hourly6-1990-2005 3D Temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-T.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  reference_height_temperature_20C:
+    description: 20C hourly6-1990-2005 Reference height temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-TREFHT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_temperature_radiative_20C:
+    description: 20C hourly6-1990-2005 Surface temperature (radiative)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-TS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  zonal_wind_20C:
+    description: 20C hourly6-1990-2005 3D Zonal wind
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-U.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  meridional_wind_20C:
+    description: 20C hourly6-1990-2005 3D Meridional wind
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-V.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  geopotential_height_above_sea_level_20C:
+    description: 20C hourly6-1990-2005 3D Geopotential Height (above sea level)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-Z3.zarr"
+      storage_options:
+        anon: True
+      consolidated: True

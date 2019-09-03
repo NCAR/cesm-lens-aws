@@ -1,0 +1,104 @@
+plugins:
+  source:
+    - module: intake_xarray
+
+sources:
+
+  total_convective_and_large_scale_precipitation_rate_RCP85:
+    description: RCP85 hourly6-2071-2080 Total (convective and large-scale) precipitation rate (liq + ice)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-PRECT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_pressure_RCP85:
+    description: RCP85 hourly6-2071-2080 Surface pressure
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-PS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  sea_level_pressure_RCP85:
+    description: RCP85 hourly6-2071-2080 Sea level pressure
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-PSL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  specific_humidity_RCP85:
+    description: RCP85 hourly6-2071-2080 3D Specific humidity
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-Q.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  reference_height_humidity_RCP85:
+    description: RCP85 hourly6-2071-2080 Reference height humidity
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-QREFHT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  temperature_RCP85:
+    description: RCP85 hourly6-2071-2080 3D Temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-T.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  reference_height_temperature_RCP85:
+    description: RCP85 hourly6-2071-2080 Reference height temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-TREFHT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_temperature_radiative_RCP85:
+    description: RCP85 hourly6-2071-2080 Surface temperature (radiative)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-TS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  zonal_wind_RCP85:
+    description: RCP85 hourly6-2071-2080 3D Zonal wind
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-U.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  meridional_wind_RCP85:
+    description: RCP85 hourly6-2071-2080 3D Meridional wind
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-V.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  geopotential_height_above_sea_level_RCP85:
+    description: RCP85 hourly6-2071-2080 3D Geopotential Height (above sea level)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-Z3.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
