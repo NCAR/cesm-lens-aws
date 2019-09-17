@@ -10,7 +10,7 @@ distributed:
       limit: 5s
 
 kubernetes:
-  worker-name: dask-pangeo-cmip6-examples-{uuid}
+  worker-name: cesm-lens-aws-notebooks-{uuid}
   worker-template:
     metadata:
     spec:
