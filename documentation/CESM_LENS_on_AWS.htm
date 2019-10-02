@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap.min.css" integrity="sha384-QgMEqHzUTK+LoHUhEPkPPb5doQ7O2/sBRiq03GWdbo3k3eNPu/LMiRtrWI+SdVzu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://assets.opendata.aws/css/awsod.css" integrity="sha384-xJI5lYTAHi5szIar83e2pooIt8BOLN3vGa4dRrLi07y45XFAbgzl9F0mMNyw5SzN" crossorigin="anonymous">
+   <style>
+      table, th, td { border: 1px solid black; }
+      th, td { padding: 2px; }
+      strong { font-weight: bold; }
+  </style>
+  <title>CESM LENS on AWS</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+
+<h1>CESM LENS on AWS</h1>
+
+<h2><em>Status (2019-09-24): Beta testing</em></h2>
+    
+<ul><em>
+<li>Approximately 70 TB of data are now publicly available as Zarr stores in AWS S3 for early adopters.</li>
+<li>A Jupyter Notebook illustrating basic operations on these data has been developed.</li>
+<li>Primary variables from the 20th Century and RCP8.5 runs, as well as historical and control runs, have been copied.</li>
+</em></ul>
+
+<h2>Overview</h2>
+
+<p>A significant subset of data from the National Center for Atmospheric
+Research (NCAR) Community Earth System Model Large Ensemble (CESM LENS) is
+publicly available on Amazon S3 (us-west-2 region).</p>
+
+<p>The <a href="http://www.cesm.ucar.edu/projects/community-projects/LENS/">CESM LENS</a> dataset includes a 40-member
+ensemble of climate simulations for the period 1920-2100. All model runs were subject to the same radiative forcing
+scenario: historical up to 2005, and RCP8.5 thereafter. (RCP8.5 - Representative Concentration Pathway 8.5 - refers to
+the worst-case scenario considered in the <a href="https://www.ipcc.ch/report/ar5/wg1/">Fifth Assessment Report</a> of
+the Intergovernmental Panel on Climate Change - IPCC). Each of the 40 runs begins from a slightly different initial
+atmospheric state (created by randomly perturbing temperatures at the level of round-off error). The data comprise both
+surface (2D) and volumetric (3D) variables in the atmosphere, ocean, land, and ice domains. A subset (currently ~70 TB) including
+the most useful variables has been copied to AWS S3; the total LENS data volume is ~500 TB, and is available in full
+through the <a href="https://www.earthsystemgrid.org/dataset/ucar.cgd.ccsm4.CESM_CAM5_BGC_LE.html">NCAR Climate Data
+Gateway (CDG)</a> for download or via web services. To request that additional model outputs be included on AWS, please
+contact jeffdlb at ucar.edu.</p>
+
+<h2>Accessing CESM LENS on AWS</h2>
+
+<p>S3 bucket: ncar-cesm-lens in us-west-2 region<br/>
+Amazon Resource Name arn:aws:s3:::ncar-cesm-lens<br/>
+Bucket contents list: <a href="https://ncar-cesm-lens.s3.amazonaws.com/">https://ncar-cesm-lens.s3.amazonaws.com/</a></p>
+
+<p>The intent is for users to compute directly on the data in AWS rather than downloading from S3 (traditional download is available from the NCAR CDG link above).</p>
+
+<h3>Code Repository</h3>
+
+<p>A Jupyter Notebook illustrating how to read the LENS data on AWS, and reproducing Figures 2 and 4 from Kay et al. (2015), has been developed.
+<ul><li><a href="https://nbviewer.jupyter.org/gist/andersy005/00c2798f9200c3a2a14f8ea845ba15a0">
+    Static version of the Notebook</a></li>
+    <li><a href="https://github.com/NCAR/cesm-lens-aws">Reusable Notebook on GitHub</a>.</li>
+    <li><em>Note:</em> This Notebook and other resources on GitHub will be gradually improved and augmented.</li>
+    </ul>
+</p>
+
+
+<h2>Available Data</h2>
+
+<p>Zarr format: The LENS data on AWS are structured according to the <a
+href="https://zarr.readthedocs.io/en/stable/">Zarr</a> storage format. There are independent Zarr stores for each
+component, frequency, experiment, and variable. The naming convention is:<br/>
+<code>{component}/{frequency}/cesmLE-{experiment}-{variable}.zarr</code><br/>
+where:</p>
+<ul>
+<li>component = atm (atmosphere), lnd (land), ocn (ocean), ice_nh or ice_sh (ice, northern and southern hemispheres)</li>
+<li>frequency = monthly, daily, or hourly6-startYear-endYear (6-hourly data are available for distinct periods)</li>
+<li>experiment = 20C (20th century runs), RCP85 (RCP 8.5 runs), HIST (historical run),
+CTRL (fully-coupled control run), CTRL_AMIP (atmosphere-only control run), CTRL_SLAB (slab-ocean control run)</li> 
+<li>variable = one of the variable names listed in the tables below</li>
+</ul>
+
+<h3>Zarr Stores</h3>
+
+<p>The table below shows the available Zarr stores, including the experiments, variables, time ranges, and 2D or 3D nature
+(3D means multiple atmosphere levels or ocean depths are present). See also <a href="lensS3zarrStores.txt">text file listing all Zarr stores</a> (in alphabetical order)</p>
+
+<table>
+<tr style="background-color:lightgrey">
+    <th>Prefix</th>
+    <th>Experiments</th>
+    <th>Variables</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Vertical</th>
+</tr>
+<tr>
+    <td>atm/monthly/CESM-LE-*</td>
+    <td>20C, RCP85, HIST, CTRL, CTRL_SLAB, CTRL_AMIP</td>
+    <td><strong>2D:</strong> FLNS, FLNSC, FLUT, FSNS, FSNSC, FSNTOA, ICEFRAC, LHFLX, PRECC, PRECL, PRECSC, PRECSL, PSL, SHFLX, TMQ, TREFHT, TREFHTMN, TREFHTMX, TS</br> <strong>3D:</strong> T, U, V, Q, Z3</td>
+    <td rowspan="4">1920-01 (20C)<br/>2006-01 (RCP8.5)<br/>1850-01 (HIST)<br/>0400-01 (CTRL)<br/>0001-01 (CTRL_SLAB)<br/>0001-01 (CTRL_AMIP)</td>
+    <td rowspan="4">2005-12 (20C)<br/>2100-12 (RCP8.5)<br/>1919-12 (HIST)<br/>2200-12 (CTRL)<br/>1000-12 (CTRL_SLAB)<br/>2600-12 (CTRL_AMIP)</td>
+    <td>2D, 3D</td>
+</tr>
+<tr>
+    <td>lnd/monthly/CESM-LE-*</td>
+    <td>20C, RCP85</td>
+    <td>FSNO, H2OSNO, QRUNOFF, RAIN, SNOW, SOILLIQ, SOILWATER_10CM</td>
+    <td>2D</td>
+</tr>
+<tr>
+    <td>ocn/monthly/CESM-LE-*</td>
+    <td>20C, RCP85, CTRL</td>
+    <td><strong>2D:</strong> SSH, SST</br> <strong>3D:</strong> SALT</td>
+    <td>2D, 3D</td>
+</tr>
+<tr>
+    <td>ice_nh/monthly/CESM-LE-*, ice_sh/monthly/CESM-LE-*</td>
+    <td>20C, RCP85, CTRL</td>
+    <td>aice, hi</td>
+    <td>2D</td>
+</tr>
+<tr>
+    <td>atm/daily/CESM-LE-*</td>
+    <td>20C, RCP85</td>
+    <td>FLNS, FLNSC, FLUT, FSNS, FSNSC, FSNTOA, ICEFRAC, LHFLX, PRECL, PRECSC, PRECSL, PRECT, PRECTMX, PSL, Q850, SHFLX, TMQ, TREFHT, TREFHTMN, TREFHTMX, TS, UBOT, WSPDSRFAV, Z500</td>
+    <td rowspan="3">1920-01-01 (20C)<br/>2006-01-01 (RCP8.5)</td>
+    <td rowspan="3">2005-12-31 (20C)<br/>2100-12-31 (RCP8.5)</td>
+    <td>2D</td>
+</tr>
+<tr>
+    <td>lnd/daily/CESM-LE-*</td>
+    <td>20C, RCP85</td>
+    <td>FSNO, H2OSNO, QRUNOFF, RAIN, SNOW, SOILWATER_10CM</td>
+    <td>2D</td>
+</tr>
+<tr>
+    <td>ice_nh/daily/CESM-LE-*, ice_sh/daily/CESM-LE-*</td>
+    <td>20C, RCP85</td>
+    <td>aice_d, hi_d</td>
+    <td>2D</td>
+</tr>
+<tr>
+    <td>atm/hourly6-1990-2005/CESM-LE-*</td>
+    <td>20C</td>
+    <td><strong>2D:</strong> PRECT, PS, PSL, QREFHT, TREFHT, TS</br> <strong>3D:</strong> T, U, V, Q, Z3</td>
+    <td>1990-01-01T00 (20C)</td>
+    <td>2005-12-31T18 (20C)</td>
+    <td>2D, 3D</td>
+</tr>
+<tr>
+    <td>atm/hourly6-2026-2035/CESM-LE-*</td>
+    <td>RCP85</td>
+    <td><strong>2D:</strong> PRECT, PS, PSL, QREFHT, TREFHT, TS</br> <strong>3D:</strong> T, U, V, Q, Z3</td>
+    <td>2026-01-01T00 (RCP8.5)</td>
+    <td>2035-12-31T18 (RCP8.5)</td>
+    <td>2D, 3D</td>
+</tr>
+<tr>
+    <td style="white-space: nowrap">atm/hourly6-2071-2080/CESM-LE-*</td>
+    <td>RCP85</td>
+    <td><strong>2D:</strong> PRECT, PS, PSL, QREFHT, TREFHT, TS</br> <strong>3D:</strong> T, U, V, Q, Z3</td>
+    <td style="white-space: nowrap">2071-01-01T00 (RCP8.5)</td>
+    <td style="white-space: nowrap">2080-12-31T18 (RCP8.5)</td>
+    <td>2D, 3D</td>
+</tr>
+
+</table>
+
+<h3>Short and long names of each variable:</h3>
+
+<table>
+    <tr style="background-color:lightgrey"><th colspan="2">Atmosphere Variables</th></tr>
+    <tr><td>FLNS</td><td>Net longwave flux at surface</td></tr>
+    <tr><td>FLNSC</td><td>Clearsky net longwave flux at surface</td></tr></td></tr>
+    <tr><td>FLUT</td><td>Upwelling longwave flux at top of model</td></tr>
+    <tr><td>FSNS</td><td>Net solar flux at surface</td></tr>
+    <tr><td>FSNSC</td><td>Clearsky net solar flux at surface</td></tr>
+    <tr><td>FSNTOA</td><td>Net solar flux at top of atmosphere</td></tr>
+    <tr><td>ICEFRAC</td><td>Fraction of sfc area covered by sea-ice</td></tr>
+    <tr><td>LHFLX</td><td>Surface latent heat flux</td></tr>
+    <tr><td>PRECC</td><td>Convective precipitation rate (liq + ice)</td></tr>
+    <tr><td>PRECL</td><td>Large-scale (stable) precipitation rate (liq + ice)</td></tr>
+    <tr><td>PRECSC</td><td>Convective snow rate (water equivalent)</td></tr>
+    <tr><td>PRECSL</td><td>Large-scale (stable) snow rate (water equivalent)</td></tr>
+    <tr><td>PRECT</td><td>Total (convective and large-scale) precipitation rate (liq + ice)</td></tr>
+    <tr><td>PRECTMX</td><td>Maximum (convective and large-scale) precipitation rate (liq+ice)</td></tr>
+    <tr><td>PS</td><td>Surface pressure</td></tr>
+    <tr><td>PSL</td><td>Sea level pressure</td></tr>
+    <tr><td>Q</td><td>3D Specific humidity</td></tr>
+    <tr><td>Q850</td><td>Specific Humidity at 850 mbar pressure surface</td></tr>
+    <tr><td>QREFHT</td><td>Reference height humidity</td></tr>
+    <tr><td>SHFLX</td><td>Surface sensible heat flux</td></tr>
+    <tr><td>T</td><td>3D Temperature</td></tr>
+    <tr><td>TMQ</td><td>Total (vertically integrated) precipitable water</td></tr>
+    <tr><td>TREFHT</td><td>Reference height temperature</td></tr>
+    <tr><td>TREFHTMN</td><td>Minimum reference height temperature over output period</td></tr>
+    <tr><td>TREFHTMX</td><td>Maximum reference height temperature over output period</td></tr>
+    <tr><td>TS</td><td>Surface temperature (radiative)</td></tr>
+    <tr><td>U</td><td>3D Zonal wind</td></tr>
+    <tr><td>UBOT</td><td>Lowest model level zonal wind</td></tr>
+    <tr><td>V</td><td>3D Meridional wind</td></tr>
+    <tr><td>WSPDSRFAV</td><td>Horizontal total wind speed average at the surface</td></tr>
+    <tr><td>Z3</td><td>3D Geopotential Height (above sea level)</td></tr>
+    <tr><td>Z500</td><td>Geopotential Z at 500 mbar pressure surface</td></tr>
+    <tr style="background-color:lightgrey"><th colspan="2">Land Variables</th></tr>
+    <tr><td>FSNO</td><td>fraction of ground covered by snow</td></tr>
+    <tr><td>H2OSNO</td><td>snow depth (liquid water)</td></tr>
+    <tr><td>QRUNOFF</td><td>total liquid runoff (does not include QSNWCPICE)</td></tr>
+    <tr><td>RAIN</td><td>atmospheric rain</td></tr>
+    <tr><td>SNOW</td><td>atmospheric snow</td></tr>
+    <tr><td>SOILLIQ</td><td>soil liquid water (vegetated land units only)</td></tr>
+    <tr><td>SOILWATER_10CM</td><td>soil liquid water + ice in top 10cm of soil (veg land units only)</td></tr>
+    <tr style="background-color:lightgrey"><th colspan="2">Ocean Variables</th></tr>
+    <tr><td>SALT</td><td>3D Salinity</td></tr>
+    <tr><td>SSH</td><td>Sea Surface Height</td></tr>
+    <tr><td>SST</td><td>Potential Temperature</td></tr>
+    <tr style="background-color:lightgrey"><th colspan="2">Ice Variables <em>(Note: northern and southern hemisphere grids are stored separately as ice_nh and ice_sh)</em></th></tr>
+    <tr><td>aice</td><td>ice area (aggregate)</td></tr>
+    <tr><td>aice_d</td><td>ice area (aggregate)</td></tr>
+    <tr><td>hi</td><td>grid cellmean ice thickness</td></tr>
+    <tr><td>hi_d</td><td>grid cellmean ice thickness</td></tr>
+</table>
+
+    
+
+<h2>Data Citation and Updates</h2>
+
+<p>Data are freely available and reusable under the terms of the CC-BY-4.0 license. See <a href="https://www.earthsystemgrid.org/legal/data_terms_of_use.html">Terms of Use</a>.
+If you use these data, we request that you provide attribution in any derived products.
+The original, complete LENS dataset and the AWS-hosted subset have different DOIs (Digital Object Identifiers) to reflect their differing scope and format, so please cite
+whichever version of the dataset used, as well as the Kay et al. (2015) paper:</p>
+
+<ul>
+<li>AWS-hosted subset: <a href="https://doi.org/10.26024/wt24-5j82">doi:10.26024/wt24-5j82</a><br/>
+de La Beaujardière, J., Banihirwe, A., Shih, C.-F., Paul, K., and Hamman, J., (2019), "NCAR CESM LENS Cloud-Optimized Subset,"
+UCAR/NCAR Computational and Informations Systems Lab</li>
+<li>Original dataset: <a href="https://doi.org/10.5065/d6j101d1">doi:10.5065/d6j101d1</a><br/>
+Kay, J. and Deser, C. (2016). "The Community Earth System Model (CESM) Large Ensemble Project" UCAR/NCAR Climate Data Gateway.</li>
+<li>Kay et al. (2015) paper: <a href="https://doi.org/10.5065/d6j101d1">doi:10.5065/d6j101d1</a><br/>
+Kay, J. E., Deser, C., Phillips, A., Mai, A., Hannay, C., Strand, G., Arblaster, J., Bates, S., Danabasoglu, G., Edwards, J., Holland, M. Kushner, P.,
+Lamarque, J.-F., Lawrence, D., Lindsay, K., Middleton, A., Munoz, E., Neale, R., Oleson, K., Polvani, L., and M. Vertenstein (2015),
+"The Community Earth System Model (CESM) Large Ensemble Project: A Community Resource for Studying Climate Change in the Presence of Internal Climate Variability,"
+<it>Bulletin of the American Meteorological Society,</it> <b>96,</b> 1333-1349</li>
+</ul>
+
+<p>We also urge users to watch the <a href="https://github.com/NCAR/cesm-lens-aws">CESM LENS GitHub repo</a> for additions or changes to data and tools, and to notify cesm-lens-aws@ucar.edu if you are using these data so that we can justify continued maintenance on S3. All LENS model runs have been completed, so we do not expect to add data on an ongoing basis, but may be able to include additional fields upon request.</p>
+
+<footer>
+<hr>
+<a href="http://aws.amazon.com/opendata/public-datasets">AWS Public Datasets</a>
+</footer>
+
+</div>
+</div>
+</body>
+</html>
+
