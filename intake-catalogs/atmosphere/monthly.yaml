@@ -1083,3 +1083,219 @@ sources:
       storage_options:
         anon: True
       consolidated: True
+
+  net_longwave_flux_at_surface_HIST:
+    description: HIST monthly Net longwave flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLNS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  clearsky_net_longwave_flux_at_surface_HIST:
+    description: HIST monthly Clearsky net longwave flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLNSC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  upwelling_longwave_flux_at_top_of_model_HIST:
+    description: HIST monthly Upwelling longwave flux at top of model
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLUT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  net_solar_flux_at_surface_HIST:
+    description: HIST monthly Net solar flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FSNS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  clearsky_net_solar_flux_at_surface_HIST:
+    description: HIST monthly Clearsky net solar flux at surface
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FSNSC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  net_solar_flux_at_top_of_atmosphere_HIST:
+    description: HIST monthly Net solar flux at top of atmosphere
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FSNTOA.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  fraction_of_sfc_area_covered_by_sea_ice_HIST:
+    description: HIST monthly Fraction of sfc area covered by sea-ice
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-ICEFRAC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_latent_heat_flux_HIST:
+    description: HIST monthly Surface latent heat flux
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-LHFLX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  convective_precipitation_rate_HIST:
+    description: HIST monthly Convective precipitation rate (liq + ice)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  large_scale_stable_precipitation_rate_HIST:
+    description: HIST monthly Large-scale (stable) precipitation rate (liq + ice)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  convective_snow_rate_HIST:
+    description: HIST monthly Convective snow rate (water equivalent)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECSC.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  large_scale_stable_snow_rate_HIST:
+    description: HIST monthly Large-scale (stable) snow rate (water equivalent)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECSL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  sea_level_pressure_HIST:
+    description: HIST monthly Sea level pressure
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PSL.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  specific_humidity_HIST:
+    description: HIST monthly 3D Specific humidity
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-Q.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_sensible_heat_flux_HIST:
+    description: HIST monthly Surface sensible heat flux
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-SHFLX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  temperature_HIST:
+    description: HIST monthly 3D Temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-T.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  total_vertically_integrated_precipitable_water_HIST:
+    description: HIST monthly Total (vertically integrated) precipitable water
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TMQ.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  reference_height_temperature_HIST:
+    description: HIST monthly Reference height temperature
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TREFHT.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  minimum_reference_height_temperature_over_output_period_HIST:
+    description: HIST monthly Minimum reference height temperature over output period
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TREFHTMN.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  maximum_reference_height_temperature_over_output_period_HIST:
+    description: HIST monthly Maximum reference height temperature over output period
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TREFHTMX.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  surface_temperature_radiative_HIST:
+    description: HIST monthly Surface temperature (radiative)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TS.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  zonal_wind_HIST:
+    description: HIST monthly 3D Zonal wind
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-U.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  meridional_wind_HIST:
+    description: HIST monthly 3D Meridional wind
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-V.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
+
+  geopotential_height_above_sea_level_HIST:
+    description: HIST monthly 3D Geopotential Height (above sea level)
+    driver: zarr
+    args:
+      urlpath: "s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-Z3.zarr"
+      storage_options:
+        anon: True
+      consolidated: True
