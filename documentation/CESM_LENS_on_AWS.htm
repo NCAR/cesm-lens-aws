@@ -19,31 +19,22 @@
 
 <h1>CESM LENS on AWS</h1>
 
-<h2><em>Status (2019-09-24): Beta testing</em></h2>
-    
-<ul><em>
-<li>Approximately 70 TB of data are now publicly available as Zarr stores in AWS S3 for early adopters.</li>
-<li>A Jupyter Notebook illustrating basic operations on these data has been developed.</li>
-<li>Primary variables from the 20th Century and RCP8.5 runs, as well as historical and control runs, have been copied.</li>
-</em></ul>
-
 <h2>Overview</h2>
 
-<p>A significant subset of data from the National Center for Atmospheric
-Research (NCAR) Community Earth System Model Large Ensemble (CESM LENS) is
-publicly available on Amazon S3 (us-west-2 region).</p>
-
-<p>The <a href="http://www.cesm.ucar.edu/projects/community-projects/LENS/">CESM LENS</a> dataset includes a 40-member
-ensemble of climate simulations for the period 1920-2100. All model runs were subject to the same radiative forcing
+<p>The National Center for Atmospheric Research (<a href="https://ncar.ucar.edu/">NCAR</a>)
+Community Earth System Model Large Ensemble (<a href="http://www.cesm.ucar.edu/projects/community-projects/LENS/">CESM LENS</a>)
+dataset includes a 40-member ensemble of climate simulations for the period 1920-2100. All model runs were subject to the same radiative forcing
 scenario: historical up to 2005, and RCP8.5 thereafter. (RCP8.5 - Representative Concentration Pathway 8.5 - refers to
 the worst-case scenario considered in the <a href="https://www.ipcc.ch/report/ar5/wg1/">Fifth Assessment Report</a> of
 the Intergovernmental Panel on Climate Change - IPCC). Each of the 40 runs begins from a slightly different initial
 atmospheric state (created by randomly perturbing temperatures at the level of round-off error). The data comprise both
-surface (2D) and volumetric (3D) variables in the atmosphere, ocean, land, and ice domains. A subset (currently ~70 TB) including
-the most useful variables has been copied to AWS S3; the total LENS data volume is ~500 TB, and is available in full
-through the <a href="https://www.earthsystemgrid.org/dataset/ucar.cgd.ccsm4.CESM_CAM5_BGC_LE.html">NCAR Climate Data
-Gateway (CDG)</a> for download or via web services. To request that additional model outputs be included on AWS, please
-contact jeffdlb at ucar.edu.</p>
+surface (2D) and volumetric (3D) variables in the atmosphere, ocean, land, and ice domains.</p>
+
+<p>The total LENS data volume is ~500 TB, and is traditionally accessible through the
+NCAR Climate Data Gateway (<a href="https://www.earthsystemgrid.org/dataset/ucar.cgd.ccsm4.CESM_CAM5_BGC_LE.html">CDG</a>)
+for download or via web services. A subset (currently ~70 TB compressed) including the most useful variables is now
+<a href="https://registry.opendata.aws/ncar-cesm-lens/">freely available on S3</a> thanks to the
+<a href="https://aws.amazon.com/opendata/public-datasets/">AWS Public Dataset Program</a>.</p>
 
 <h2>Accessing CESM LENS on AWS</h2>
 
@@ -55,14 +46,13 @@ Bucket contents list: <a href="https://ncar-cesm-lens.s3.amazonaws.com/">https:/
 
 <h3>Code Repository</h3>
 
-<p>A Jupyter Notebook illustrating how to read the LENS data on AWS, and reproducing Figures 2 and 4 from Kay et al. (2015), has been developed.
-<ul><li><a href="https://nbviewer.jupyter.org/gist/andersy005/00c2798f9200c3a2a14f8ea845ba15a0">
-    Static version of the Notebook</a></li>
-    <li><a href="https://github.com/NCAR/cesm-lens-aws">Reusable Notebook on GitHub</a>.</li>
-    <li><em>Note:</em> This Notebook and other resources on GitHub will be gradually improved and augmented.</li>
-    </ul>
-</p>
+<p>A Jupyter Notebook illustrating how to read the LENS data on AWS, and reproducing Figures 2 and 4 from Kay et al. (2015), has been developed. This Notebook and other resources on GitHub will be gradually improved and augmented.</p>
 
+<ul>
+    <li><a href="kay-et-al-2015.v2.html">
+    Rendered (static) version of the Notebook</a></li>
+    <li><a href="https://github.com/NCAR/cesm-lens-aws">Reusable Notebook on GitHub</a>.</li>
+</ul>
 
 <h2>Available Data</h2>
 
@@ -221,11 +211,13 @@ CTRL (fully-coupled control run), CTRL_AMIP (atmosphere-only control run), CTRL_
     <tr><td>hi_d</td><td>grid cellmean ice thickness</td></tr>
 </table>
 
-    
+<h2>Known Issues</h2>
+
+<p>Users should consult the list of <a href="http://www.cesm.ucar.edu/projects/community-projects/LENS/known-issues.html">known issues in the CESM LENS dataset</a>. 
 
 <h2>Data Citation and Updates</h2>
 
-<p>Data are freely available and reusable under the terms of the CC-BY-4.0 license. See <a href="https://www.earthsystemgrid.org/legal/data_terms_of_use.html">Terms of Use</a>.
+<p>Data are freely available and reusable under the terms of the CC-BY-4.0 license. See <a href="https://www.ucar.edu/terms-of-use/data">Terms of Use</a>.
 If you use these data, we request that you provide attribution in any derived products.
 The original, complete LENS dataset and the AWS-hosted subset have different DOIs (Digital Object Identifiers) to reflect their differing scope and format, so please cite
 whichever version of the dataset used, as well as the Kay et al. (2015) paper:</p>
@@ -243,7 +235,7 @@ Lamarque, J.-F., Lawrence, D., Lindsay, K., Middleton, A., Munoz, E., Neale, R.,
 <it>Bulletin of the American Meteorological Society,</it> <b>96,</b> 1333-1349</li>
 </ul>
 
-<p>We also urge users to watch the <a href="https://github.com/NCAR/cesm-lens-aws">CESM LENS GitHub repo</a> for additions or changes to data and tools, and to notify cesm-lens-aws@ucar.edu if you are using these data so that we can justify continued maintenance on S3. All LENS model runs have been completed, so we do not expect to add data on an ongoing basis, but may be able to include additional fields upon request.</p>
+<p>We also urge users to watch the <a href="https://github.com/NCAR/cesm-lens-aws">CESM LENS GitHub repo</a> for additions or changes to data and tools, and to notify cesm-lens-aws at ucar.edu if you are using these data so that we can justify continued maintenance on S3. All LENS model runs have been completed, so we do not expect to add data on an ongoing basis, but may be able to include additional fields upon request.</p>
 
 <footer>
 <hr>
