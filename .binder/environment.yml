@@ -1,0 +1,7 @@
+name: notebook
+channels:
+  - conda-forge
+dependencies:
+  - intake-esm>=2019.10.15
+  - pip:
+      - git+https://github.com/hhuangwx/cmaps.git#egg=cmaps

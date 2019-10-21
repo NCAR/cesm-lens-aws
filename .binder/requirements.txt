@@ -1,2 +1,0 @@
-git+https://github.com/hhuangwx/cmaps.git#egg=cmaps
-intake-esm
