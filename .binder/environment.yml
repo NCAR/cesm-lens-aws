@@ -3,5 +3,10 @@ channels:
   - conda-forge
 dependencies:
   - intake-esm>=2019.10.15
+  - watermark
+  - cftime==1.0.3.4
   - pip:
       - git+https://github.com/hhuangwx/cmaps.git#egg=cmaps
+      - git+https://github.com/intake/filesystem_spec.git@master
+      - git+https://github.com/dask/s3fs.git@master
+      - git+https://github.com/NCAR/intake-esm.git@master
