@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - watermark
-  - cftime==1.0.3.4
+  - cftime>=1.0.4.2
   - pip:
       - git+https://github.com/hhuangwx/cmaps.git#egg=cmaps
       - git+https://github.com/intake/filesystem_spec.git@master
