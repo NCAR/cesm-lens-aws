@@ -3,9 +3,9 @@ channels:
   - conda-forge
 dependencies:
   - watermark
-  - cftime>=1.0.4.2
+  - cftime==1.0.3.4
+  - s3fs>=0.4.0
+  - fsspec>=0.6.0
   - pip:
       - git+https://github.com/hhuangwx/cmaps.git#egg=cmaps
-      - git+https://github.com/intake/filesystem_spec.git@master
-      - git+https://github.com/dask/s3fs.git@master
       - git+https://github.com/NCAR/intake-esm.git@master
