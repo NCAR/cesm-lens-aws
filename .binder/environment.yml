@@ -2,6 +2,7 @@ name: notebook
 channels:
   - conda-forge
 dependencies:
+  - pip
   - watermark
   - cftime==1.0.3.4
   - s3fs>=0.4.0
