@@ -30,7 +30,7 @@ This catalog is an [ESM collection](https://github.com/NCAR/esm-collection-spec)
 
 Using this catalog requires the following package versions:
 
-- [Intake-esm](https://github.com/NCAR/intake-esm) >= `v2019.12.13`
+- [Intake-esm](https://github.com/NCAR/intake-esm) > `v2020.3.16.1`
 
 ## Examples
 
@@ -44,16 +44,16 @@ In [2]: col = intake.open_esm_datastore("https://raw.githubusercontent.com/NCAR/
 
 In [3]: col
 Out[3]:
-aws-cesm1-le-ESM Collection with 278 entries:
+aws-cesm1-le-ESM Collection with 302 entries:
         > 5 component(s)
 
         > 5 frequency(s)
 
         > 6 experiment(s)
 
-        > 46 variable(s)
+        > 54 variable(s)
 
-        > 278 path(s)
+        > 302 path(s)
 
 In [4]: col_subset = col.search(experiment="RCP85", frequency="monthly", variable=["hi", "aice"])
 
@@ -71,12 +71,12 @@ aws-cesm1-le-ESM Collection with 4 entries:
         > 4 path(s)
 
 In [6]: dsets = col_subset.to_dataset_dict(zarr_kwargs={"consolidated": True}, storage_options={"anon": True})
-Progress: |███████████████████████████████████████████████████████████████████████████████| 100.0%
 
 --> The keys in the returned dictionary of datasets are constructed as follows:
         'component.experiment.frequency'
 
---> There are 2 group(s)
+--> There is/are 2 group(s)
+[########################################] | 100% Completed |  3.3s
 
 In [7]: dsets.keys()
 Out[7]: dict_keys(['ice_sh.RCP85.monthly', 'ice_nh.RCP85.monthly'])
