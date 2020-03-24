@@ -5,8 +5,9 @@ dependencies:
   - cftime
   - cmaps
   - fsspec>=0.6.0
-  - intake-esm
   - nc-time-axis
   - pip
   - s3fs>=0.4.0
   - watermark
+  - pip:
+     - git+https://github.com/NCAR/intake-esm.git
