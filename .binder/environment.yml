@@ -5,10 +5,8 @@ dependencies:
   - pangeo-notebook
   - cftime
   - cmaps
-  - fsspec>=0.6.0
   - nc-time-axis
-  - pip
   - s3fs>=0.4.0
   - watermark
-  - pip:
-     - intake-esm>=2020.3.16.2
+  - zarr
+  - intake-esm>=2020.3.16.2
