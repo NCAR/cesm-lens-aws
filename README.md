@@ -30,7 +30,7 @@ This catalog is an [ESM collection](https://github.com/NCAR/esm-collection-spec)
 
 Using this catalog requires the following package versions:
 
-- [Intake-esm](https://github.com/NCAR/intake-esm) > `v2020.3.16.1`
+- [Intake-esm](https://github.com/NCAR/intake-esm) >= `v2020.3.16.2`
 
 ## Examples
 
