@@ -11,4 +11,4 @@ dependencies:
   - s3fs>=0.4.0
   - watermark
   - pip:
-     - git+https://github.com/NCAR/intake-esm.git@master
+     - intake-esm>=2020.3.16.2
