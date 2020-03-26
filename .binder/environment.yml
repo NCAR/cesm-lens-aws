@@ -2,6 +2,8 @@ name: notebook
 channels:
   - conda-forge
 dependencies:
+  - pangeo-dask
+  - pangeo-notebook
   - cftime
   - cmaps
   - fsspec>=0.6.0
