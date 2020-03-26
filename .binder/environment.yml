@@ -2,7 +2,6 @@ name: notebook
 channels:
   - conda-forge
 dependencies:
-  - pangeo-dask
   - pangeo-notebook
   - cftime
   - cmaps
