@@ -1,6 +1,0 @@
-#!/bin/bash
-set -euo pipefail
-
-# labextensions
-jupyter labextension install --clean \
-                            @pyviz/jupyterlab_pyviz \
