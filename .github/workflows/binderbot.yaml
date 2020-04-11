@@ -9,6 +9,8 @@ on:
       - 'notebooks/*.ipynb'
       - 'binder-gallery.yaml'
       - 'thumbnail.png'
+      - '.github/workflows/binderbot.yaml'
+      - '.binder/**'
   pull_request:
     branches:
       - master
@@ -16,6 +18,8 @@ on:
       - 'notebooks/*.ipynb'
       - 'binder-gallery.yaml'
       - 'thumbnail.png'
+      - '.github/workflows/binderbot.yaml'
+      - '.binder/**'
 
 jobs:
   build:
