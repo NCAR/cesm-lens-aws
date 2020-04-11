@@ -6,7 +6,7 @@ on:
     branches:
       - master
     paths:
-      - '**.ipynb'
+      - 'notebooks/*.ipynb'
       - 'binder-gallery.yaml'
       - 'thumbnail.png'
   pull_request:
