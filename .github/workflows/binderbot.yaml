@@ -9,6 +9,8 @@ on:
       - 'notebooks/*.ipynb'
       - 'binder-gallery.yaml'
       - 'thumbnail.png'
+      - '.github/workflows/binderbot.yaml'
+      - '.binder/**'
   pull_request:
     branches:
       - master
@@ -16,6 +18,8 @@ on:
       - 'notebooks/*.ipynb'
       - 'binder-gallery.yaml'
       - 'thumbnail.png'
+      - '.github/workflows/binderbot.yaml'
+      - '.binder/**'
 
 jobs:
   build:
@@ -56,13 +60,13 @@ jobs:
           --binder-url ${{ steps.parse.outputs.binder_url }} \
           --repo ${{ steps.parse.outputs.binder_repo }} \
           --ref ${{ steps.parse.outputs.binder_ref }} \
-          *.ipynb
+          notebooks/*.ipynb
       - name: Commit files
         if: github.ref == 'refs/heads/master'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add binder-gallery.yaml thumbnail.png *.ipynb
+          git add binder-gallery.yaml thumbnail.png notebooks/*.ipynb
           git commit -m "Binderbot output"
       - name: Push commit
         if: github.ref == 'refs/heads/master'
