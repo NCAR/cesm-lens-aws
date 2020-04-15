@@ -9,4 +9,4 @@ dependencies:
   - s3fs>=0.4.0
   - watermark
   - zarr
-  - intake-esm>=2020.3.16.2
+  - intake-esm==2019.12.13
