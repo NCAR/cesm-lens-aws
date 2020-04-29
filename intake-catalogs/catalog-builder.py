@@ -17,20 +17,25 @@ def build_catalog(bucket='ncar-cesm-lens'):
         s = fs.ls(freq)[1:]
         stores.extend(s)
 
+    print(stores)
     entries = []
 
     for store in stores:
-        path_components = store.split('/')
-        component, frequency = path_components[1], path_components[2]
-        _, experiment, variable = path_components[-1].split('.')[0].split('-')
-        entry = {
-            'component': component,
-            'frequency': frequency,
-            'experiment': experiment,
-            'variable': variable,
-            'path': f's3://{store}',
-        }
-        entries.append(entry)
+        try:
+            path_components = store.split('/')
+            print(path_components)
+            component, frequency = path_components[1], path_components[2]
+            _, experiment, variable = path_components[-1].split('.')[0].split('-')
+            entry = {
+                'component': component,
+                'frequency': frequency,
+                'experiment': experiment,
+                'variable': variable,
+                'path': f's3://{store}',
+            }
+            entries.append(entry)
+        except ValueError:
+            pass
 
     df = pd.DataFrame(entries)
     df.to_csv('aws-cesm1-le.csv', index=False)
