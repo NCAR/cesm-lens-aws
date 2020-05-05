@@ -4,10 +4,13 @@ channels:
 dependencies:
   - cftime
   - cmaps
-  - fsspec>=0.6.0
+  - fsspec
+  - intake-esm
   - nc-time-axis
+  - netcdf4
+  - pangeo-notebook=2020.05.04
   - pip
-  - s3fs>=0.4.0
+  - s3fs
   - watermark
-  - pip:
-     - git+https://github.com/NCAR/intake-esm.git@master
+  - zarr
+  - cartopy
