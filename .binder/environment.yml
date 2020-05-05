@@ -4,11 +4,11 @@ channels:
 dependencies:
   - cftime
   - cmaps
+  - dask-gateway>=0.7.1
   - fsspec>=0.6.0
+  - intake-esm
   - nc-time-axis
+  - pangeo-notebook=2020.05.04
   - pip
   - s3fs>=0.4.0
-  - dask-gateway>=0.7.1
   - watermark
-  - intake-esm
-  - pangeo-notebook
