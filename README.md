@@ -43,41 +43,24 @@ In [1]: import intake
 In [2]: col = intake.open_esm_datastore("https://raw.githubusercontent.com/NCAR/cesm-lens-aws/master/intake-catalogs/aws-cesm1-le.json")
 
 In [3]: col
-Out[3]:
-aws-cesm1-le-ESM Collection with 302 entries:
-        > 5 component(s)
+Out[3]: <aws-cesm1-le catalog with 27 dataset(s) from 365 asset(s)>
 
-        > 5 frequency(s)
+In [4]: col.df.head()
+Out[4]:
+  component frequency experiment variable                                               path
+0       atm     daily        20C     FLNS  s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNS....
+1       atm     daily        20C    FLNSC  s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNSC...
+2       atm     daily        20C     FLUT  s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLUT....
+3       atm     daily        20C     FSNS  s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNS....
+4       atm     daily        20C    FSNSC  s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNSC...
 
-        > 6 experiment(s)
-
-        > 54 variable(s)
-
-        > 302 path(s)
-
-In [4]: col_subset = col.search(experiment="RCP85", frequency="monthly", variable=["hi", "aice"])
-
-In [5]: col_subset
-Out[5]:
-aws-cesm1-le-ESM Collection with 4 entries:
-        > 2 component(s)
-
-        > 1 frequency(s)
-
-        > 1 experiment(s)
-
-        > 2 variable(s)
-
-        > 4 path(s)
+In [5]: col_subset = col.search(experiment="RCP85", frequency="monthly", variable=["hi", "aice"])
 
 In [6]: dsets = col_subset.to_dataset_dict(zarr_kwargs={"consolidated": True}, storage_options={"anon": True})
 
 --> The keys in the returned dictionary of datasets are constructed as follows:
         'component.experiment.frequency'
-
---> There is/are 2 group(s)
-[########################################] | 100% Completed |  3.3s
-
+ |████████████████████████████████████████████████████████████████████████████████████████████████████| 100.00% [2/2 00:00<00:00]
 In [7]: dsets.keys()
 Out[7]: dict_keys(['ice_sh.RCP85.monthly', 'ice_nh.RCP85.monthly'])
 
@@ -116,15 +99,16 @@ Data variables:
     uarea        (nj, ni) float32 dask.array<chunksize=(76, 320), meta=np.ndarray>
     hi           (member_id, time, nj, ni) float32 dask.array<chunksize=(40, 36, 76, 320), meta=np.ndarray>
 Attributes:
-    comment:                   All years have exactly 365 days
-    contents:                  Diagnostic and Prognostic Variables
-    conventions:               CF-1.0
     history:                   2019-07-19 13:44:43.986221 xarray.open_dataset...
-    comment2:                  File written on model date 20060201
+    contents:                  Diagnostic and Prognostic Variables
+    nco_openmp_thread_number:  1
     comment3:                  seconds elapsed into model date:      0
     NCO:                       4.3.4
-    nco_openmp_thread_number:  1
+    comment:                   All years have exactly 365 days
+    comment2:                  File written on model date 20060201
     source:                    sea ice model: Community Ice Code (CICE)
+    conventions:               CF-1.0
+    intake_esm_dataset_key:    ice_sh.RCP85.monthly
 ```
 
 ## Reference Documentation
