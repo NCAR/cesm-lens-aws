@@ -36,15 +36,10 @@ jobs:
           python intake-catalogs/catalog-builder.py
           git status
 
-      - name: Configure AWS credentials
-        # if: github.ref == 'refs/heads/master'
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-west-2
-
       - name: Upload catalog to s3
         # if: github.ref == 'refs/heads/master'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           aws s3 sync intake-catalogs s3://ncar-cesm-lens/catalogs/ --exclude "*" --include "aws-cesm1-le*"  --dryrun
