@@ -26,7 +26,7 @@ def build_catalog(bucket='ncar-cesm-lens'):
         stores.extend(s)
 
     entries = []
-    for store in tqdm(stores):
+    for store in tqdm(stores[:10]):
         try:
             path_components = store.split('/')
             component, frequency = path_components[1], path_components[2]
