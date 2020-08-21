@@ -1,0 +1,37 @@
+name: Update catalog
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "intake-catalogs/*"
+
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "intake-catalogs/*"
+
+  workflow_dispatch: # allows you to trigger manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+
+        run: |
+          python -m pip install fsspec xarray zarr s3fs tqdm
+
+      - name: Update catalog
+        run: |
+          python intake-catalogs/catalog-builder.py
+          git status
