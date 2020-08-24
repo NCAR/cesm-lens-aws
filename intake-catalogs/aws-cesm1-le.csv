@@ -172,10 +172,10 @@ atm,monthly,RCP85,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TREFHTMX
 atm,monthly,RCP85,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TS.zarr,surface temperature (radiative),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 atm,monthly,RCP85,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-U.zarr,zonal wind,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 atm,monthly,RCP85,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr,geopotential height (above sea level),3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
-atm,static,CTRL,,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr,,,,
-atm,static,HIST,,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr,,,,
-atm,static,RCP85,,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr,,,,
-atm,static,20C,,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr,,,,
+atm,static,CTRL,,s3://ncar-cesm-lens/atm/static/grid.zarr,,,,
+atm,static,HIST,,s3://ncar-cesm-lens/atm/static/grid.zarr,,,,
+atm,static,RCP85,,s3://ncar-cesm-lens/atm/static/grid.zarr,,,,
+atm,static,20C,,s3://ncar-cesm-lens/atm/static/grid.zarr,,,,
 ice_nh,daily,CTRL,aice_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-CTRL-aice_d.zarr,ice area  (aggregate),2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
 ice_nh,daily,CTRL,hi_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-CTRL-hi_d.zarr,grid cell mean ice thickness,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
 ice_nh,daily,HIST,aice_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-HIST-aice_d.zarr,ice area  (aggregate),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
@@ -190,10 +190,10 @@ ice_nh,monthly,HIST,aice,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-HIST-aice.zar
 ice_nh,monthly,HIST,hi,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-HIST-hi.zarr,grid cell mean ice thickness,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
 ice_nh,monthly,RCP85,aice,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-aice.zarr,ice area  (aggregate),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 ice_nh,monthly,RCP85,hi,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr,grid cell mean ice thickness,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
-ice_nh,static,CTRL,,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr,,,,
-ice_nh,static,HIST,,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr,,,,
-ice_nh,static,RCP85,,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr,,,,
-ice_nh,static,20C,,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr,,,,
+ice_nh,static,CTRL,,s3://ncar-cesm-lens/ice_nh/static/grid.zarr,,,,
+ice_nh,static,HIST,,s3://ncar-cesm-lens/ice_nh/static/grid.zarr,,,,
+ice_nh,static,RCP85,,s3://ncar-cesm-lens/ice_nh/static/grid.zarr,,,,
+ice_nh,static,20C,,s3://ncar-cesm-lens/ice_nh/static/grid.zarr,,,,
 ice_sh,daily,CTRL,aice_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-CTRL-aice_d.zarr,ice area  (aggregate),2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
 ice_sh,daily,CTRL,hi_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-CTRL-hi_d.zarr,grid cell mean ice thickness,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
 ice_sh,daily,HIST,aice_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-HIST-aice_d.zarr,ice area  (aggregate),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
@@ -208,10 +208,10 @@ ice_sh,monthly,HIST,aice,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-HIST-aice.zar
 ice_sh,monthly,HIST,hi,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-HIST-hi.zarr,grid cell mean ice thickness,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
 ice_sh,monthly,RCP85,aice,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-aice.zarr,ice area  (aggregate),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 ice_sh,monthly,RCP85,hi,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr,grid cell mean ice thickness,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
-ice_sh,static,CTRL,,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr,,,,
-ice_sh,static,HIST,,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr,,,,
-ice_sh,static,RCP85,,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr,,,,
-ice_sh,static,20C,,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr,,,,
+ice_sh,static,CTRL,,s3://ncar-cesm-lens/ice_sh/static/grid.zarr,,,,
+ice_sh,static,HIST,,s3://ncar-cesm-lens/ice_sh/static/grid.zarr,,,,
+ice_sh,static,RCP85,,s3://ncar-cesm-lens/ice_sh/static/grid.zarr,,,,
+ice_sh,static,20C,,s3://ncar-cesm-lens/ice_sh/static/grid.zarr,,,,
 lnd,daily,CTRL,FSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-CTRL-FSNO.zarr,fraction of ground covered by snow,2.0,0403-01-01 12:00:00,2200-12-31 12:00:00
 lnd,daily,CTRL,H2OSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-CTRL-H2OSNO.zarr,snow depth (liquid water),2.0,0403-01-01 12:00:00,2200-12-31 12:00:00
 lnd,daily,CTRL,QRUNOFF,s3://ncar-cesm-lens/lnd/daily/cesmLE-CTRL-QRUNOFF.zarr,total liquid runoff (does not include qsnwcpice),2.0,0403-01-01 12:00:00,2200-12-31 12:00:00
@@ -258,10 +258,10 @@ lnd,monthly,RCP85,RAIN,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-RAIN.zarr,at
 lnd,monthly,RCP85,SNOW,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SNOW.zarr,atmospheric snow,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 lnd,monthly,RCP85,SOILLIQ,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILLIQ.zarr,soil liquid water (vegetated landunits only),3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 lnd,monthly,RCP85,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr,soil liquid water + ice in top 10cm of soil (veg landunits only),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
-lnd,static,CTRL,,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr,,,,
-lnd,static,HIST,,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr,,,,
-lnd,static,RCP85,,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr,,,,
-lnd,static,20C,,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr,,,,
+lnd,static,CTRL,,s3://ncar-cesm-lens/lnd/static/grid.zarr,,,,
+lnd,static,HIST,,s3://ncar-cesm-lens/lnd/static/grid.zarr,,,,
+lnd,static,RCP85,,s3://ncar-cesm-lens/lnd/static/grid.zarr,,,,
+lnd,static,20C,,s3://ncar-cesm-lens/lnd/static/grid.zarr,,,,
 ocn,monthly,20C,DIC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-DIC.zarr,dissolved inorganic carbon,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
 ocn,monthly,20C,DOC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-DOC.zarr,dissolved organic carbon,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
 ocn,monthly,20C,FW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-FW.zarr,freshwater flux,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
@@ -386,7 +386,7 @@ ocn,monthly,RCP85,VVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VVEL.zarr,ve
 ocn,monthly,RCP85,WTS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WTS.zarr,salt flux across top face,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 ocn,monthly,RCP85,WTT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WTT.zarr,heat flux across top face,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 ocn,monthly,RCP85,WVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr,vertical velocity,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
-ocn,static,CTRL,,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr,,,,
-ocn,static,HIST,,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr,,,,
-ocn,static,RCP85,,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr,,,,
-ocn,static,20C,,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr,,,,
+ocn,static,CTRL,,s3://ncar-cesm-lens/ocn/static/grid.zarr,,,,
+ocn,static,HIST,,s3://ncar-cesm-lens/ocn/static/grid.zarr,,,,
+ocn,static,RCP85,,s3://ncar-cesm-lens/ocn/static/grid.zarr,,,,
+ocn,static,20C,,s3://ncar-cesm-lens/ocn/static/grid.zarr,,,,
