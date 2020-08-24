@@ -31,9 +31,9 @@ def build_catalog(bucket='ncar-cesm-lens'):
         try:
             path_components = store.split('/')
             component, frequency = path_components[1], path_components[2]
+            path = f's3://{store}'
             if frequency != 'static':
                 _, experiment, variable = path_components[-1].split('.')[0].split('-')
-                path = f's3://{store}'
                 ds = xr.open_zarr(
                     fs.get_mapper(path), consolidated=True, decode_cf=False
                 )
