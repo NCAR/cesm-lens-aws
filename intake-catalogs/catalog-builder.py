@@ -15,6 +15,7 @@ def build_catalog(bucket='ncar-cesm-lens'):
     dirs = fs.ls(bucket)
     frequencies = []
     components = ['ice_nh', 'ice_sh', 'lnd', 'ocn', 'atm']
+    experiments = ['CTRL', 'HIST', 'RCP85', '20C']
     for d in dirs:
         if d.split('/')[-1] in components:
             f = fs.ls(d)
@@ -69,11 +70,18 @@ def build_catalog(bucket='ncar-cesm-lens'):
                 entries.append(entry)
             else:
                 entry = {'component': component, 'frequency': frequency, 'path': path}
-
-            entries.append(entry)
+                static_entries = [
+                    {
+                        'component': component,
+                        'frequency': frequency,
+                        'path': path,
+                        'experiment': exp,
+                    }
+                    for exp in experiments
+                ]
+                entries.extend(static_entries)
         except ValueError:
             print(store)
-
     df = pd.DataFrame(entries)
     return df
 
