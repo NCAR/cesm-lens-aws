@@ -4,11 +4,11 @@ channels:
 dependencies:
   - cftime
   - cmaps
-  - fsspec=0.7.3
-  - intake-esm
+  - fsspec
+  - intake-esm>=2020.8.15
   - nc-time-axis
   - netcdf4
-  - pangeo-notebook=2020.06.10
+  - pangeo-notebook=2020.08.11
   - pip
   - s3fs
   - watermark
