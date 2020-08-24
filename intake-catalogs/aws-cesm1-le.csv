@@ -1,4 +1,22 @@
 component,frequency,experiment,variable,path,variable_long_name,dim_per_tstep,start,end
+atm,daily,20C,FLNS,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNS.zarr,net longwave flux at surface,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,FLNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNSC.zarr,clearsky net longwave flux at surface,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,FLUT,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLUT.zarr,upwelling longwave flux at top of model,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,FSNS,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNS.zarr,net solar flux at surface,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,FSNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNSC.zarr,clearsky net solar flux at surface,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,FSNTOA,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNTOA.zarr,net solar flux at top of atmosphere,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,ICEFRAC,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-ICEFRAC.zarr,fraction of sfc area covered by sea-ice,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,LHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-LHFLX.zarr,surface latent heat flux,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,PRECL,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,PRECSC,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECSC.zarr,convective snow rate (water equivalent),2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,PRECSL,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,PSL,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PSL.zarr,sea level pressure,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,SHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-SHFLX.zarr,surface sensible heat flux,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,TMQ,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TMQ.zarr,total (vertically integrated) precipitable water,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,TREFHT,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TREFHT.zarr,reference height temperature,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,TREFHTMN,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TREFHTMN.zarr,minimum reference height temperature over output period,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,TREFHTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TREFHTMX.zarr,maximum reference height temperature over output period,2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
+atm,daily,20C,TS,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TS.zarr,surface temperature (radiative),2.0,1920-01-01 12:00:00,2005-12-30 12:00:00
 atm,daily,CTRL,FLNS,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FLNS.zarr,net longwave flux at surface,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
 atm,daily,CTRL,FLNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FLNSC.zarr,clearsky net longwave flux at surface,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
 atm,daily,CTRL,FLUT,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FLUT.zarr,upwelling longwave flux at top of model,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
@@ -17,24 +35,24 @@ atm,daily,CTRL,TREFHT,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-TREFHT.zarr,refe
 atm,daily,CTRL,TREFHTMN,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-TREFHTMN.zarr,minimum reference height temperature over output period,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
 atm,daily,CTRL,TREFHTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-TREFHTMX.zarr,maximum reference height temperature over output period,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
 atm,daily,CTRL,TS,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-TS.zarr,surface temperature (radiative),2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
-atm,daily,HIST,FLNS,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLNS.zarr,net longwave flux at surface,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,FLNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLNSC.zarr,clearsky net longwave flux at surface,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,FLUT,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLUT.zarr,upwelling longwave flux at top of model,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,FSNS,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FSNS.zarr,net solar flux at surface,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,FSNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FSNSC.zarr,clearsky net solar flux at surface,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,FSNTOA,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FSNTOA.zarr,net solar flux at top of atmosphere,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,ICEFRAC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-ICEFRAC.zarr,fraction of sfc area covered by sea-ice,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,LHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-LHFLX.zarr,surface latent heat flux,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,PRECL,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,PRECSC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PRECSC.zarr,convective snow rate (water equivalent),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,PRECSL,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,PSL,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PSL.zarr,sea level pressure,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,SHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-SHFLX.zarr,surface sensible heat flux,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,TMQ,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TMQ.zarr,total (vertically integrated) precipitable water,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,TREFHT,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TREFHT.zarr,reference height temperature,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,TREFHTMN,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TREFHTMN.zarr,minimum reference height temperature over output period,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,TREFHTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TREFHTMX.zarr,maximum reference height temperature over output period,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
-atm,daily,HIST,TS,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TS.zarr,surface temperature (radiative),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FLNS,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLNS.zarr,net longwave flux at surface,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FLNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLNSC.zarr,clearsky net longwave flux at surface,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FLUT,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLUT.zarr,upwelling longwave flux at top of model,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FSNS,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FSNS.zarr,net solar flux at surface,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FSNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FSNSC.zarr,clearsky net solar flux at surface,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FSNTOA,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FSNTOA.zarr,net solar flux at top of atmosphere,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,ICEFRAC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-ICEFRAC.zarr,fraction of sfc area covered by sea-ice,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,LHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-LHFLX.zarr,surface latent heat flux,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,PRECL,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,PRECSC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PRECSC.zarr,convective snow rate (water equivalent),1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,PRECSL,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,PSL,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PSL.zarr,sea level pressure,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,SHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-SHFLX.zarr,surface sensible heat flux,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,TMQ,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TMQ.zarr,total (vertically integrated) precipitable water,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,TREFHT,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TREFHT.zarr,reference height temperature,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,TREFHTMN,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TREFHTMN.zarr,minimum reference height temperature over output period,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,TREFHTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TREFHTMX.zarr,maximum reference height temperature over output period,1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
+atm,daily,HIST,TS,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TS.zarr,surface temperature (radiative),1.0,1850-01-01 00:00:00,1919-12-31 12:00:00
 atm,daily,RCP85,FLNS,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNS.zarr,net longwave flux at surface,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
 atm,daily,RCP85,FLNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNSC.zarr,clearsky net longwave flux at surface,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
 atm,daily,RCP85,FLUT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLUT.zarr,upwelling longwave flux at top of model,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
