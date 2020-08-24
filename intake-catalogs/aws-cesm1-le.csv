@@ -1,366 +1,392 @@
-component,frequency,experiment,variable,path
-atm,daily,20C,FLNS,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNS.zarr
-atm,daily,20C,FLNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNSC.zarr
-atm,daily,20C,FLUT,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLUT.zarr
-atm,daily,20C,FSNS,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNS.zarr
-atm,daily,20C,FSNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNSC.zarr
-atm,daily,20C,FSNTOA,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNTOA.zarr
-atm,daily,20C,ICEFRAC,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-ICEFRAC.zarr
-atm,daily,20C,LHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-LHFLX.zarr
-atm,daily,20C,PRECL,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECL.zarr
-atm,daily,20C,PRECSC,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECSC.zarr
-atm,daily,20C,PRECSL,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECSL.zarr
-atm,daily,20C,PRECT,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECT.zarr
-atm,daily,20C,PRECTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECTMX.zarr
-atm,daily,20C,PSL,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PSL.zarr
-atm,daily,20C,Q850,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-Q850.zarr
-atm,daily,20C,SHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-SHFLX.zarr
-atm,daily,20C,TMQ,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TMQ.zarr
-atm,daily,20C,TREFHT,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TREFHT.zarr
-atm,daily,20C,TREFHTMN,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TREFHTMN.zarr
-atm,daily,20C,TREFHTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TREFHTMX.zarr
-atm,daily,20C,TS,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TS.zarr
-atm,daily,20C,UBOT,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-UBOT.zarr
-atm,daily,20C,WSPDSRFAV,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-WSPDSRFAV.zarr
-atm,daily,20C,Z500,s3://ncar-cesm-lens/atm/daily/cesmLE-20C-Z500.zarr
-atm,daily,RCP85,FLNS,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNS.zarr
-atm,daily,RCP85,FLNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNSC.zarr
-atm,daily,RCP85,FLUT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLUT.zarr
-atm,daily,RCP85,FSNS,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FSNS.zarr
-atm,daily,RCP85,FSNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FSNSC.zarr
-atm,daily,RCP85,FSNTOA,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FSNTOA.zarr
-atm,daily,RCP85,ICEFRAC,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-ICEFRAC.zarr
-atm,daily,RCP85,LHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-LHFLX.zarr
-atm,daily,RCP85,PRECL,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECL.zarr
-atm,daily,RCP85,PRECSC,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECSC.zarr
-atm,daily,RCP85,PRECSL,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECSL.zarr
-atm,daily,RCP85,PRECT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECT.zarr
-atm,daily,RCP85,PRECTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECTMX.zarr
-atm,daily,RCP85,PSL,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PSL.zarr
-atm,daily,RCP85,Q850,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-Q850.zarr
-atm,daily,RCP85,SHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-SHFLX.zarr
-atm,daily,RCP85,TMQ,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TMQ.zarr
-atm,daily,RCP85,TREFHT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHT.zarr
-atm,daily,RCP85,TREFHTMN,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHTMN.zarr
-atm,daily,RCP85,TREFHTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHTMX.zarr
-atm,daily,RCP85,TS,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TS.zarr
-atm,daily,RCP85,UBOT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-UBOT.zarr
-atm,daily,RCP85,WSPDSRFAV,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-WSPDSRFAV.zarr
-atm,daily,RCP85,Z500,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-Z500.zarr
-atm,hourly6-1990-2005,20C,PRECT,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-PRECT.zarr
-atm,hourly6-1990-2005,20C,PS,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-PS.zarr
-atm,hourly6-1990-2005,20C,PSL,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-PSL.zarr
-atm,hourly6-1990-2005,20C,Q,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-Q.zarr
-atm,hourly6-1990-2005,20C,QREFHT,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-QREFHT.zarr
-atm,hourly6-1990-2005,20C,T,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-T.zarr
-atm,hourly6-1990-2005,20C,TREFHT,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-TREFHT.zarr
-atm,hourly6-1990-2005,20C,TS,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-TS.zarr
-atm,hourly6-1990-2005,20C,U,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-U.zarr
-atm,hourly6-1990-2005,20C,V,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-V.zarr
-atm,hourly6-1990-2005,20C,Z3,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-Z3.zarr
-atm,hourly6-2026-2035,RCP85,PRECT,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-PRECT.zarr
-atm,hourly6-2026-2035,RCP85,PS,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-PS.zarr
-atm,hourly6-2026-2035,RCP85,PSL,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-PSL.zarr
-atm,hourly6-2026-2035,RCP85,Q,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-Q.zarr
-atm,hourly6-2026-2035,RCP85,QREFHT,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-QREFHT.zarr
-atm,hourly6-2026-2035,RCP85,T,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-T.zarr
-atm,hourly6-2026-2035,RCP85,TREFHT,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-TREFHT.zarr
-atm,hourly6-2026-2035,RCP85,TS,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-TS.zarr
-atm,hourly6-2026-2035,RCP85,U,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-U.zarr
-atm,hourly6-2026-2035,RCP85,V,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-V.zarr
-atm,hourly6-2026-2035,RCP85,Z3,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-Z3.zarr
-atm,hourly6-2071-2080,RCP85,PRECT,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-PRECT.zarr
-atm,hourly6-2071-2080,RCP85,PS,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-PS.zarr
-atm,hourly6-2071-2080,RCP85,PSL,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-PSL.zarr
-atm,hourly6-2071-2080,RCP85,Q,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-Q.zarr
-atm,hourly6-2071-2080,RCP85,QREFHT,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-QREFHT.zarr
-atm,hourly6-2071-2080,RCP85,T,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-T.zarr
-atm,hourly6-2071-2080,RCP85,TREFHT,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-TREFHT.zarr
-atm,hourly6-2071-2080,RCP85,TS,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-TS.zarr
-atm,hourly6-2071-2080,RCP85,U,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-U.zarr
-atm,hourly6-2071-2080,RCP85,V,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-V.zarr
-atm,hourly6-2071-2080,RCP85,Z3,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-Z3.zarr
-atm,monthly,20C,FLNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FLNS.zarr
-atm,monthly,20C,FLNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FLNSC.zarr
-atm,monthly,20C,FLUT,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FLUT.zarr
-atm,monthly,20C,FSNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FSNS.zarr
-atm,monthly,20C,FSNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FSNSC.zarr
-atm,monthly,20C,FSNTOA,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FSNTOA.zarr
-atm,monthly,20C,ICEFRAC,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-ICEFRAC.zarr
-atm,monthly,20C,LHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-LHFLX.zarr
-atm,monthly,20C,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-PRECC.zarr
-atm,monthly,20C,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-PRECL.zarr
-atm,monthly,20C,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-PRECSC.zarr
-atm,monthly,20C,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-PRECSL.zarr
-atm,monthly,20C,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-PSL.zarr
-atm,monthly,20C,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-Q.zarr
-atm,monthly,20C,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-SHFLX.zarr
-atm,monthly,20C,T,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-T.zarr
-atm,monthly,20C,TMQ,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TMQ.zarr
-atm,monthly,20C,TREFHT,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TREFHT.zarr
-atm,monthly,20C,TREFHTMN,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TREFHTMN.zarr
-atm,monthly,20C,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TREFHTMX.zarr
-atm,monthly,20C,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TS.zarr
-atm,monthly,20C,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-U.zarr
-atm,monthly,20C,V,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-V.zarr
-atm,monthly,20C,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-Z3.zarr
-atm,monthly,CTRL,FLNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FLNS.zarr
-atm,monthly,CTRL,FLNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FLNSC.zarr
-atm,monthly,CTRL,FLUT,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FLUT.zarr
-atm,monthly,CTRL,FSNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FSNS.zarr
-atm,monthly,CTRL,FSNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FSNSC.zarr
-atm,monthly,CTRL,FSNTOA,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FSNTOA.zarr
-atm,monthly,CTRL,ICEFRAC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-ICEFRAC.zarr
-atm,monthly,CTRL,LHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-LHFLX.zarr
-atm,monthly,CTRL,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECC.zarr
-atm,monthly,CTRL,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECL.zarr
-atm,monthly,CTRL,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECSC.zarr
-atm,monthly,CTRL,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECSL.zarr
-atm,monthly,CTRL,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PSL.zarr
-atm,monthly,CTRL,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-Q.zarr
-atm,monthly,CTRL,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-SHFLX.zarr
-atm,monthly,CTRL,T,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-T.zarr
-atm,monthly,CTRL,TMQ,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-TMQ.zarr
-atm,monthly,CTRL,TREFHT,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-TREFHT.zarr
-atm,monthly,CTRL,TREFHTMN,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-TREFHTMN.zarr
-atm,monthly,CTRL,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-TREFHTMX.zarr
-atm,monthly,CTRL,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-TS.zarr
-atm,monthly,CTRL,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-U.zarr
-atm,monthly,CTRL,V,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-V.zarr
-atm,monthly,CTRL,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-Z3.zarr
-atm,monthly,CTRL_AMIP,FLNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-FLNS.zarr
-atm,monthly,CTRL_AMIP,FLNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-FLNSC.zarr
-atm,monthly,CTRL_AMIP,FLUT,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-FLUT.zarr
-atm,monthly,CTRL_AMIP,FSNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-FSNS.zarr
-atm,monthly,CTRL_AMIP,FSNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-FSNSC.zarr
-atm,monthly,CTRL_AMIP,FSNTOA,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-FSNTOA.zarr
-atm,monthly,CTRL_AMIP,ICEFRAC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-ICEFRAC.zarr
-atm,monthly,CTRL_AMIP,LHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-LHFLX.zarr
-atm,monthly,CTRL_AMIP,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-PRECC.zarr
-atm,monthly,CTRL_AMIP,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-PRECL.zarr
-atm,monthly,CTRL_AMIP,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-PRECSC.zarr
-atm,monthly,CTRL_AMIP,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-PRECSL.zarr
-atm,monthly,CTRL_AMIP,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-PSL.zarr
-atm,monthly,CTRL_AMIP,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-Q.zarr
-atm,monthly,CTRL_AMIP,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-SHFLX.zarr
-atm,monthly,CTRL_AMIP,T,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-T.zarr
-atm,monthly,CTRL_AMIP,TMQ,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-TMQ.zarr
-atm,monthly,CTRL_AMIP,TREFHT,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-TREFHT.zarr
-atm,monthly,CTRL_AMIP,TREFHTMN,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-TREFHTMN.zarr
-atm,monthly,CTRL_AMIP,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-TREFHTMX.zarr
-atm,monthly,CTRL_AMIP,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-TS.zarr
-atm,monthly,CTRL_AMIP,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-U.zarr
-atm,monthly,CTRL_AMIP,V,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-V.zarr
-atm,monthly,CTRL_AMIP,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-Z3.zarr
-atm,monthly,CTRL_SLAB_OCN,FLNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-FLNS.zarr
-atm,monthly,CTRL_SLAB_OCN,FLNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-FLNSC.zarr
-atm,monthly,CTRL_SLAB_OCN,FLUT,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-FLUT.zarr
-atm,monthly,CTRL_SLAB_OCN,FSNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-FSNS.zarr
-atm,monthly,CTRL_SLAB_OCN,FSNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-FSNSC.zarr
-atm,monthly,CTRL_SLAB_OCN,FSNTOA,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-FSNTOA.zarr
-atm,monthly,CTRL_SLAB_OCN,ICEFRAC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-ICEFRAC.zarr
-atm,monthly,CTRL_SLAB_OCN,LHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-LHFLX.zarr
-atm,monthly,CTRL_SLAB_OCN,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-PRECC.zarr
-atm,monthly,CTRL_SLAB_OCN,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-PRECL.zarr
-atm,monthly,CTRL_SLAB_OCN,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-PRECSC.zarr
-atm,monthly,CTRL_SLAB_OCN,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-PRECSL.zarr
-atm,monthly,CTRL_SLAB_OCN,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-PSL.zarr
-atm,monthly,CTRL_SLAB_OCN,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-Q.zarr
-atm,monthly,CTRL_SLAB_OCN,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-SHFLX.zarr
-atm,monthly,CTRL_SLAB_OCN,T,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-T.zarr
-atm,monthly,CTRL_SLAB_OCN,TMQ,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-TMQ.zarr
-atm,monthly,CTRL_SLAB_OCN,TREFHT,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-TREFHT.zarr
-atm,monthly,CTRL_SLAB_OCN,TREFHTMN,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-TREFHTMN.zarr
-atm,monthly,CTRL_SLAB_OCN,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-TREFHTMX.zarr
-atm,monthly,CTRL_SLAB_OCN,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-TS.zarr
-atm,monthly,CTRL_SLAB_OCN,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-U.zarr
-atm,monthly,CTRL_SLAB_OCN,V,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-V.zarr
-atm,monthly,CTRL_SLAB_OCN,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-Z3.zarr
-atm,monthly,HIST,FLNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLNS.zarr
-atm,monthly,HIST,FLNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLNSC.zarr
-atm,monthly,HIST,FLUT,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLUT.zarr
-atm,monthly,HIST,FSNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FSNS.zarr
-atm,monthly,HIST,FSNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FSNSC.zarr
-atm,monthly,HIST,FSNTOA,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FSNTOA.zarr
-atm,monthly,HIST,ICEFRAC,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-ICEFRAC.zarr
-atm,monthly,HIST,LHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-LHFLX.zarr
-atm,monthly,HIST,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECC.zarr
-atm,monthly,HIST,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECL.zarr
-atm,monthly,HIST,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECSC.zarr
-atm,monthly,HIST,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECSL.zarr
-atm,monthly,HIST,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PSL.zarr
-atm,monthly,HIST,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-Q.zarr
-atm,monthly,HIST,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-SHFLX.zarr
-atm,monthly,HIST,T,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-T.zarr
-atm,monthly,HIST,TMQ,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TMQ.zarr
-atm,monthly,HIST,TREFHT,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TREFHT.zarr
-atm,monthly,HIST,TREFHTMN,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TREFHTMN.zarr
-atm,monthly,HIST,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TREFHTMX.zarr
-atm,monthly,HIST,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TS.zarr
-atm,monthly,HIST,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-U.zarr
-atm,monthly,HIST,V,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-V.zarr
-atm,monthly,HIST,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-Z3.zarr
-atm,monthly,RCP85,FLNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FLNS.zarr
-atm,monthly,RCP85,FLNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FLNSC.zarr
-atm,monthly,RCP85,FLUT,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FLUT.zarr
-atm,monthly,RCP85,FSNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FSNS.zarr
-atm,monthly,RCP85,FSNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FSNSC.zarr
-atm,monthly,RCP85,FSNTOA,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FSNTOA.zarr
-atm,monthly,RCP85,ICEFRAC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-ICEFRAC.zarr
-atm,monthly,RCP85,LHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-LHFLX.zarr
-atm,monthly,RCP85,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECC.zarr
-atm,monthly,RCP85,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECL.zarr
-atm,monthly,RCP85,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECSC.zarr
-atm,monthly,RCP85,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECSL.zarr
-atm,monthly,RCP85,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PSL.zarr
-atm,monthly,RCP85,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Q.zarr
-atm,monthly,RCP85,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-SHFLX.zarr
-atm,monthly,RCP85,T,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-T.zarr
-atm,monthly,RCP85,TMQ,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TMQ.zarr
-atm,monthly,RCP85,TREFHT,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TREFHT.zarr
-atm,monthly,RCP85,TREFHTMN,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TREFHTMN.zarr
-atm,monthly,RCP85,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TREFHTMX.zarr
-atm,monthly,RCP85,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TS.zarr
-atm,monthly,RCP85,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-U.zarr
-atm,monthly,RCP85,V,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-V.zarr
-atm,monthly,RCP85,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr
-ice_nh,daily,20C,aice_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-20C-aice_d.zarr
-ice_nh,daily,20C,hi_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-20C-hi_d.zarr
-ice_nh,daily,RCP85,aice_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-RCP85-aice_d.zarr
-ice_nh,daily,RCP85,hi_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-RCP85-hi_d.zarr
-ice_nh,monthly,20C,aice,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-20C-aice.zarr
-ice_nh,monthly,20C,hi,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-20C-hi.zarr
-ice_nh,monthly,CTRL,aice,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-CTRL-aice.zarr
-ice_nh,monthly,CTRL,hi,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-CTRL-hi.zarr
-ice_nh,monthly,RCP85,aice,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-aice.zarr
-ice_nh,monthly,RCP85,hi,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr
-ice_sh,daily,20C,aice_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-20C-aice_d.zarr
-ice_sh,daily,20C,hi_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-20C-hi_d.zarr
-ice_sh,daily,RCP85,aice_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-RCP85-aice_d.zarr
-ice_sh,daily,RCP85,hi_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-RCP85-hi_d.zarr
-ice_sh,monthly,20C,aice,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-20C-aice.zarr
-ice_sh,monthly,20C,hi,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-20C-hi.zarr
-ice_sh,monthly,RCP85,aice,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-aice.zarr
-ice_sh,monthly,RCP85,hi,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr
-lnd,daily,20C,FSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-20C-FSNO.zarr
-lnd,daily,20C,H2OSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-20C-H2OSNO.zarr
-lnd,daily,20C,QRUNOFF,s3://ncar-cesm-lens/lnd/daily/cesmLE-20C-QRUNOFF.zarr
-lnd,daily,20C,RAIN,s3://ncar-cesm-lens/lnd/daily/cesmLE-20C-RAIN.zarr
-lnd,daily,20C,SNOW,s3://ncar-cesm-lens/lnd/daily/cesmLE-20C-SNOW.zarr
-lnd,daily,20C,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/daily/cesmLE-20C-SOILWATER_10CM.zarr
-lnd,daily,RCP85,FSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-FSNO.zarr
-lnd,daily,RCP85,H2OSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-H2OSNO.zarr
-lnd,daily,RCP85,QRUNOFF,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-QRUNOFF.zarr
-lnd,daily,RCP85,RAIN,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-RAIN.zarr
-lnd,daily,RCP85,SNOW,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-SNOW.zarr
-lnd,daily,RCP85,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-SOILWATER_10CM.zarr
-lnd,monthly,20C,FSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-FSNO.zarr
-lnd,monthly,20C,H2OSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-H2OSNO.zarr
-lnd,monthly,20C,QRUNOFF,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-QRUNOFF.zarr
-lnd,monthly,20C,RAIN,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-RAIN.zarr
-lnd,monthly,20C,SNOW,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-SNOW.zarr
-lnd,monthly,20C,SOILLIQ,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-SOILLIQ.zarr
-lnd,monthly,20C,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-SOILWATER_10CM.zarr
-lnd,monthly,RCP85,FSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-FSNO.zarr
-lnd,monthly,RCP85,H2OSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-H2OSNO.zarr
-lnd,monthly,RCP85,QRUNOFF,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-QRUNOFF.zarr
-lnd,monthly,RCP85,RAIN,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-RAIN.zarr
-lnd,monthly,RCP85,SNOW,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SNOW.zarr
-lnd,monthly,RCP85,SOILLIQ,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILLIQ.zarr
-lnd,monthly,RCP85,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr
-ocn,monthly,20C,DIC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-DIC.zarr
-ocn,monthly,20C,DOC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-DOC.zarr
-ocn,monthly,20C,FW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-FW.zarr
-ocn,monthly,20C,HMXL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-HMXL.zarr
-ocn,monthly,20C,O2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-O2.zarr
-ocn,monthly,20C,PD,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-PD.zarr
-ocn,monthly,20C,QFLUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-QFLUX.zarr
-ocn,monthly,20C,QSW_HBL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-QSW_HBL.zarr
-ocn,monthly,20C,QSW_HTP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-QSW_HTP.zarr
-ocn,monthly,20C,RESID_S,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-RESID_S.zarr
-ocn,monthly,20C,RESID_T,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-RESID_T.zarr
-ocn,monthly,20C,SALT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SALT.zarr
-ocn,monthly,20C,SFWF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SFWF.zarr
-ocn,monthly,20C,SFWF_WRST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SFWF_WRST.zarr
-ocn,monthly,20C,SHF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SHF.zarr
-ocn,monthly,20C,SHF_QSW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SHF_QSW.zarr
-ocn,monthly,20C,SSH,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SSH.zarr
-ocn,monthly,20C,SST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SST.zarr
-ocn,monthly,20C,TAUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TAUX.zarr
-ocn,monthly,20C,TAUX2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TAUX2.zarr
-ocn,monthly,20C,TAUY,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TAUY.zarr
-ocn,monthly,20C,TAUY2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TAUY2.zarr
-ocn,monthly,20C,TEMP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TEMP.zarr
-ocn,monthly,20C,UES,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-UES.zarr
-ocn,monthly,20C,UET,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-UET.zarr
-ocn,monthly,20C,UVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-UVEL.zarr
-ocn,monthly,20C,VNS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-VNS.zarr
-ocn,monthly,20C,VNT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-VNT.zarr
-ocn,monthly,20C,VVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-VVEL.zarr
-ocn,monthly,20C,WTS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-WTS.zarr
-ocn,monthly,20C,WTT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-WTT.zarr
-ocn,monthly,20C,WVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-WVEL.zarr
-ocn,monthly,CTRL,DIC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-DIC.zarr
-ocn,monthly,CTRL,DOC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-DOC.zarr
-ocn,monthly,CTRL,FW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-FW.zarr
-ocn,monthly,CTRL,HMXL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-HMXL.zarr
-ocn,monthly,CTRL,O2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-O2.zarr
-ocn,monthly,CTRL,PD,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-PD.zarr
-ocn,monthly,CTRL,QFLUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-QFLUX.zarr
-ocn,monthly,CTRL,QSW_HBL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-QSW_HBL.zarr
-ocn,monthly,CTRL,QSW_HTP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-QSW_HTP.zarr
-ocn,monthly,CTRL,RESID_S,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-RESID_S.zarr
-ocn,monthly,CTRL,RESID_T,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-RESID_T.zarr
-ocn,monthly,CTRL,SALT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SALT.zarr
-ocn,monthly,CTRL,SFWF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SFWF.zarr
-ocn,monthly,CTRL,SFWF_WRST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SFWF_WRST.zarr
-ocn,monthly,CTRL,SHF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SHF.zarr
-ocn,monthly,CTRL,SHF_QSW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SHF_QSW.zarr
-ocn,monthly,CTRL,SSH,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SSH.zarr
-ocn,monthly,CTRL,SST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SST.zarr
-ocn,monthly,CTRL,TAUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TAUX.zarr
-ocn,monthly,CTRL,TAUX2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TAUX2.zarr
-ocn,monthly,CTRL,TAUY,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TAUY.zarr
-ocn,monthly,CTRL,TAUY2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TAUY2.zarr
-ocn,monthly,CTRL,TEMP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TEMP.zarr
-ocn,monthly,CTRL,UES,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-UES.zarr
-ocn,monthly,CTRL,UET,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-UET.zarr
-ocn,monthly,CTRL,UVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-UVEL.zarr
-ocn,monthly,CTRL,VNS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-VNS.zarr
-ocn,monthly,CTRL,VNT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-VNT.zarr
-ocn,monthly,CTRL,VVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-VVEL.zarr
-ocn,monthly,CTRL,WTS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-WTS.zarr
-ocn,monthly,CTRL,WTT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-WTT.zarr
-ocn,monthly,CTRL,WVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-WVEL.zarr
-ocn,monthly,RCP85,DIC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-DIC.zarr
-ocn,monthly,RCP85,DOC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-DOC.zarr
-ocn,monthly,RCP85,FW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-FW.zarr
-ocn,monthly,RCP85,HMXL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-HMXL.zarr
-ocn,monthly,RCP85,O2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-O2.zarr
-ocn,monthly,RCP85,PD,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-PD.zarr
-ocn,monthly,RCP85,QFLUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-QFLUX.zarr
-ocn,monthly,RCP85,QSW_HBL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-QSW_HBL.zarr
-ocn,monthly,RCP85,QSW_HTP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-QSW_HTP.zarr
-ocn,monthly,RCP85,RESID_S,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-RESID_S.zarr
-ocn,monthly,RCP85,RESID_T,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-RESID_T.zarr
-ocn,monthly,RCP85,SALT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SALT.zarr
-ocn,monthly,RCP85,SFWF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SFWF.zarr
-ocn,monthly,RCP85,SFWF_WRST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SFWF_WRST.zarr
-ocn,monthly,RCP85,SHF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SHF.zarr
-ocn,monthly,RCP85,SHF_QSW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SHF_QSW.zarr
-ocn,monthly,RCP85,SSH,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SSH.zarr
-ocn,monthly,RCP85,SST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SST.zarr
-ocn,monthly,RCP85,TAUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TAUX.zarr
-ocn,monthly,RCP85,TAUX2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TAUX2.zarr
-ocn,monthly,RCP85,TAUY,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TAUY.zarr
-ocn,monthly,RCP85,TAUY2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TAUY2.zarr
-ocn,monthly,RCP85,TEMP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TEMP.zarr
-ocn,monthly,RCP85,UES,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UES.zarr
-ocn,monthly,RCP85,UET,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UET.zarr
-ocn,monthly,RCP85,UVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UVEL.zarr
-ocn,monthly,RCP85,VNS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VNS.zarr
-ocn,monthly,RCP85,VNT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VNT.zarr
-ocn,monthly,RCP85,VVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VVEL.zarr
-ocn,monthly,RCP85,WTS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WTS.zarr
-ocn,monthly,RCP85,WTT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WTT.zarr
-ocn,monthly,RCP85,WVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr
+component,frequency,experiment,variable,path,variable_long_name,dim_per_tstep,start,end
+atm,daily,CTRL,FLNS,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FLNS.zarr,net longwave flux at surface,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,FLNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FLNSC.zarr,clearsky net longwave flux at surface,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,FLUT,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FLUT.zarr,upwelling longwave flux at top of model,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,FSNS,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FSNS.zarr,net solar flux at surface,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,FSNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FSNSC.zarr,clearsky net solar flux at surface,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,FSNTOA,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FSNTOA.zarr,net solar flux at top of atmosphere,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,ICEFRAC,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-ICEFRAC.zarr,fraction of sfc area covered by sea-ice,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,LHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-LHFLX.zarr,surface latent heat flux,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,PRECL,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,PRECSC,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-PRECSC.zarr,convective snow rate (water equivalent),2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,PRECSL,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,PSL,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-PSL.zarr,sea level pressure,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,SHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-SHFLX.zarr,surface sensible heat flux,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,TMQ,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-TMQ.zarr,total (vertically integrated) precipitable water,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,TREFHT,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-TREFHT.zarr,reference height temperature,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,TREFHTMN,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-TREFHTMN.zarr,minimum reference height temperature over output period,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,TREFHTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-TREFHTMX.zarr,maximum reference height temperature over output period,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,CTRL,TS,s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-TS.zarr,surface temperature (radiative),2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+atm,daily,HIST,FLNS,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLNS.zarr,net longwave flux at surface,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FLNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLNSC.zarr,clearsky net longwave flux at surface,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FLUT,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLUT.zarr,upwelling longwave flux at top of model,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FSNS,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FSNS.zarr,net solar flux at surface,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FSNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FSNSC.zarr,clearsky net solar flux at surface,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,FSNTOA,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FSNTOA.zarr,net solar flux at top of atmosphere,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,ICEFRAC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-ICEFRAC.zarr,fraction of sfc area covered by sea-ice,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,LHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-LHFLX.zarr,surface latent heat flux,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,PRECL,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,PRECSC,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PRECSC.zarr,convective snow rate (water equivalent),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,PRECSL,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,PSL,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-PSL.zarr,sea level pressure,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,SHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-SHFLX.zarr,surface sensible heat flux,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,TMQ,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TMQ.zarr,total (vertically integrated) precipitable water,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,TREFHT,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TREFHT.zarr,reference height temperature,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,TREFHTMN,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TREFHTMN.zarr,minimum reference height temperature over output period,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,TREFHTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TREFHTMX.zarr,maximum reference height temperature over output period,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,HIST,TS,s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-TS.zarr,surface temperature (radiative),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+atm,daily,RCP85,FLNS,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNS.zarr,net longwave flux at surface,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,FLNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNSC.zarr,clearsky net longwave flux at surface,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,FLUT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLUT.zarr,upwelling longwave flux at top of model,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,FSNS,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FSNS.zarr,net solar flux at surface,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,FSNSC,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FSNSC.zarr,clearsky net solar flux at surface,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,FSNTOA,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FSNTOA.zarr,net solar flux at top of atmosphere,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,ICEFRAC,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-ICEFRAC.zarr,fraction of sfc area covered by sea-ice,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,LHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-LHFLX.zarr,surface latent heat flux,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,PRECL,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,PRECSC,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECSC.zarr,convective snow rate (water equivalent),2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,PRECSL,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,PSL,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PSL.zarr,sea level pressure,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,SHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-SHFLX.zarr,surface sensible heat flux,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,TMQ,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TMQ.zarr,total (vertically integrated) precipitable water,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,TREFHT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHT.zarr,reference height temperature,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,TREFHTMN,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHTMN.zarr,minimum reference height temperature over output period,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,TREFHTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHTMX.zarr,maximum reference height temperature over output period,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,TS,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TS.zarr,surface temperature (radiative),2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,hourly6-1990-2005,20C,FLNS,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-FLNS.zarr,net longwave flux at surface,2.0,1990-01-01 00:00:00,2006-01-01 00:00:00
+atm,hourly6-1990-2005,20C,FSNS,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-FSNS.zarr,net solar flux at surface,2.0,1990-01-01 00:00:00,2006-01-01 00:00:00
+atm,hourly6-1990-2005,20C,PSL,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-PSL.zarr,sea level pressure,2.0,1990-01-01 00:00:00,2006-01-01 00:00:00
+atm,hourly6-1990-2005,20C,Q,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-Q.zarr,specific humidity,3.0,1990-01-01 00:00:00,2006-01-01 00:00:00
+atm,hourly6-1990-2005,20C,T,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-T.zarr,temperature,3.0,1990-01-01 00:00:00,2006-01-01 00:00:00
+atm,hourly6-1990-2005,20C,TREFHT,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-TREFHT.zarr,reference height temperature,2.0,1990-01-01 00:00:00,2006-01-01 00:00:00
+atm,hourly6-1990-2005,20C,TS,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-TS.zarr,surface temperature (radiative),2.0,1990-01-01 00:00:00,2006-01-01 00:00:00
+atm,hourly6-1990-2005,20C,U,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-U.zarr,zonal wind,3.0,1990-01-01 00:00:00,2006-01-01 00:00:00
+atm,hourly6-1990-2005,20C,Z3,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-Z3.zarr,geopotential height (above sea level),3.0,1990-01-01 00:00:00,2006-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,FLNS,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-FLNS.zarr,net longwave flux at surface,2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,FSNS,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-FSNS.zarr,net solar flux at surface,2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,PSL,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-PSL.zarr,sea level pressure,2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,Q,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-Q.zarr,specific humidity,3.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,T,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-T.zarr,temperature,3.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,TREFHT,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-TREFHT.zarr,reference height temperature,2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,TS,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-TS.zarr,surface temperature (radiative),2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,U,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-U.zarr,zonal wind,3.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,Z3,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-Z3.zarr,geopotential height (above sea level),3.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,FLNS,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-FLNS.zarr,net longwave flux at surface,2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,FSNS,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-FSNS.zarr,net solar flux at surface,2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,PSL,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-PSL.zarr,sea level pressure,2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,Q,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-Q.zarr,specific humidity,3.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,T,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-T.zarr,temperature,3.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,TREFHT,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-TREFHT.zarr,reference height temperature,2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,TS,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-TS.zarr,surface temperature (radiative),2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,U,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-U.zarr,zonal wind,3.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,Z3,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-Z3.zarr,geopotential height (above sea level),3.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,monthly,20C,FLNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FLNS.zarr,net longwave flux at surface,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,FLNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FLNSC.zarr,clearsky net longwave flux at surface,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,FLUT,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FLUT.zarr,upwelling longwave flux at top of model,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,FSNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FSNS.zarr,net solar flux at surface,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,FSNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FSNSC.zarr,clearsky net solar flux at surface,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,FSNTOA,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FSNTOA.zarr,net solar flux at top of atmosphere,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,ICEFRAC,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-ICEFRAC.zarr,fraction of sfc area covered by sea-ice,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,LHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-LHFLX.zarr,surface latent heat flux,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-PRECC.zarr,convective precipitation rate (liq + ice),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-PRECSC.zarr,convective snow rate (water equivalent),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-PSL.zarr,sea level pressure,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-Q.zarr,specific humidity,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-SHFLX.zarr,surface sensible heat flux,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,T,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-T.zarr,temperature,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,TMQ,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TMQ.zarr,total (vertically integrated) precipitable water,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,TREFHT,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TREFHT.zarr,reference height temperature,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,TREFHTMN,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TREFHTMN.zarr,minimum reference height temperature over output period,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TREFHTMX.zarr,maximum reference height temperature over output period,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TS.zarr,surface temperature (radiative),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-U.zarr,zonal wind,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,20C,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-Z3.zarr,geopotential height (above sea level),3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+atm,monthly,CTRL,FLNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FLNS.zarr,net longwave flux at surface,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,FLNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FLNSC.zarr,clearsky net longwave flux at surface,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,FLUT,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FLUT.zarr,upwelling longwave flux at top of model,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,FSNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FSNS.zarr,net solar flux at surface,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,FSNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FSNSC.zarr,clearsky net solar flux at surface,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,FSNTOA,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FSNTOA.zarr,net solar flux at top of atmosphere,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,ICEFRAC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-ICEFRAC.zarr,fraction of sfc area covered by sea-ice,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,LHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-LHFLX.zarr,surface latent heat flux,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECC.zarr,convective precipitation rate (liq + ice),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECSC.zarr,convective snow rate (water equivalent),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PSL.zarr,sea level pressure,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-Q.zarr,specific humidity,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-SHFLX.zarr,surface sensible heat flux,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,T,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-T.zarr,temperature,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,TMQ,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-TMQ.zarr,total (vertically integrated) precipitable water,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,TREFHT,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-TREFHT.zarr,reference height temperature,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,TREFHTMN,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-TREFHTMN.zarr,minimum reference height temperature over output period,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-TREFHTMX.zarr,maximum reference height temperature over output period,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-TS.zarr,surface temperature (radiative),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-U.zarr,zonal wind,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-Z3.zarr,geopotential height (above sea level),3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,HIST,FLNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLNS.zarr,net longwave flux at surface,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,FLNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLNSC.zarr,clearsky net longwave flux at surface,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,FLUT,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLUT.zarr,upwelling longwave flux at top of model,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,FSNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FSNS.zarr,net solar flux at surface,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,FSNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FSNSC.zarr,clearsky net solar flux at surface,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,FSNTOA,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FSNTOA.zarr,net solar flux at top of atmosphere,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,ICEFRAC,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-ICEFRAC.zarr,fraction of sfc area covered by sea-ice,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,LHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-LHFLX.zarr,surface latent heat flux,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECC.zarr,convective precipitation rate (liq + ice),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECSC.zarr,convective snow rate (water equivalent),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-PSL.zarr,sea level pressure,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-Q.zarr,specific humidity,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-SHFLX.zarr,surface sensible heat flux,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,T,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-T.zarr,temperature,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,TMQ,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TMQ.zarr,total (vertically integrated) precipitable water,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,TREFHT,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TREFHT.zarr,reference height temperature,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,TREFHTMN,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TREFHTMN.zarr,minimum reference height temperature over output period,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TREFHTMX.zarr,maximum reference height temperature over output period,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TS.zarr,surface temperature (radiative),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-U.zarr,zonal wind,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,HIST,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-Z3.zarr,geopotential height (above sea level),2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+atm,monthly,RCP85,FLNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FLNS.zarr,net longwave flux at surface,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,FLNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FLNSC.zarr,clearsky net longwave flux at surface,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,FLUT,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FLUT.zarr,upwelling longwave flux at top of model,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,FSNS,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FSNS.zarr,net solar flux at surface,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,FSNSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FSNSC.zarr,clearsky net solar flux at surface,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,FSNTOA,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FSNTOA.zarr,net solar flux at top of atmosphere,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,ICEFRAC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-ICEFRAC.zarr,fraction of sfc area covered by sea-ice,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,LHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-LHFLX.zarr,surface latent heat flux,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECC.zarr,convective precipitation rate (liq + ice),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECSC.zarr,convective snow rate (water equivalent),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PSL.zarr,sea level pressure,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Q.zarr,specific humidity,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-SHFLX.zarr,surface sensible heat flux,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,T,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-T.zarr,temperature,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,TMQ,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TMQ.zarr,total (vertically integrated) precipitable water,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,TREFHT,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TREFHT.zarr,reference height temperature,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,TREFHTMN,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TREFHTMN.zarr,minimum reference height temperature over output period,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,TREFHTMX,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TREFHTMX.zarr,maximum reference height temperature over output period,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,TS,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-TS.zarr,surface temperature (radiative),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,U,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-U.zarr,zonal wind,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,Z3,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr,geopotential height (above sea level),3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,static,CTRL,,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr,,,,
+atm,static,HIST,,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr,,,,
+atm,static,RCP85,,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr,,,,
+atm,static,20C,,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Z3.zarr,,,,
+ice_nh,daily,CTRL,aice_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-CTRL-aice_d.zarr,ice area  (aggregate),2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+ice_nh,daily,CTRL,hi_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-CTRL-hi_d.zarr,grid cell mean ice thickness,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+ice_nh,daily,HIST,aice_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-HIST-aice_d.zarr,ice area  (aggregate),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+ice_nh,daily,HIST,hi_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-HIST-hi_d.zarr,grid cell mean ice thickness,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+ice_nh,daily,RCP85,aice_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-RCP85-aice_d.zarr,ice area  (aggregate),2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+ice_nh,daily,RCP85,hi_d,s3://ncar-cesm-lens/ice_nh/daily/cesmLE-RCP85-hi_d.zarr,grid cell mean ice thickness,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+ice_nh,monthly,20C,aice,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-20C-aice.zarr,ice area  (aggregate),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ice_nh,monthly,20C,hi,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-20C-hi.zarr,grid cell mean ice thickness,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ice_nh,monthly,CTRL,aice,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-CTRL-aice.zarr,ice area  (aggregate),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ice_nh,monthly,CTRL,hi,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-CTRL-hi.zarr,grid cell mean ice thickness,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ice_nh,monthly,HIST,aice,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-HIST-aice.zarr,ice area  (aggregate),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ice_nh,monthly,HIST,hi,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-HIST-hi.zarr,grid cell mean ice thickness,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ice_nh,monthly,RCP85,aice,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-aice.zarr,ice area  (aggregate),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ice_nh,monthly,RCP85,hi,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr,grid cell mean ice thickness,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ice_nh,static,CTRL,,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr,,,,
+ice_nh,static,HIST,,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr,,,,
+ice_nh,static,RCP85,,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr,,,,
+ice_nh,static,20C,,s3://ncar-cesm-lens/ice_nh/monthly/cesmLE-RCP85-hi.zarr,,,,
+ice_sh,daily,CTRL,aice_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-CTRL-aice_d.zarr,ice area  (aggregate),2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+ice_sh,daily,CTRL,hi_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-CTRL-hi_d.zarr,grid cell mean ice thickness,2.0,0402-01-01 12:00:00,2200-12-31 12:00:00
+ice_sh,daily,HIST,aice_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-HIST-aice_d.zarr,ice area  (aggregate),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+ice_sh,daily,HIST,hi_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-HIST-hi_d.zarr,grid cell mean ice thickness,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+ice_sh,daily,RCP85,aice_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-RCP85-aice_d.zarr,ice area  (aggregate),2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+ice_sh,daily,RCP85,hi_d,s3://ncar-cesm-lens/ice_sh/daily/cesmLE-RCP85-hi_d.zarr,grid cell mean ice thickness,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+ice_sh,monthly,20C,aice,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-20C-aice.zarr,ice area  (aggregate),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ice_sh,monthly,20C,hi,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-20C-hi.zarr,grid cell mean ice thickness,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ice_sh,monthly,CTRL,aice,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-CTRL-aice.zarr,ice area  (aggregate),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ice_sh,monthly,CTRL,hi,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-CTRL-hi.zarr,grid cell mean ice thickness,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ice_sh,monthly,HIST,aice,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-HIST-aice.zarr,ice area  (aggregate),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ice_sh,monthly,HIST,hi,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-HIST-hi.zarr,grid cell mean ice thickness,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ice_sh,monthly,RCP85,aice,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-aice.zarr,ice area  (aggregate),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ice_sh,monthly,RCP85,hi,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr,grid cell mean ice thickness,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ice_sh,static,CTRL,,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr,,,,
+ice_sh,static,HIST,,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr,,,,
+ice_sh,static,RCP85,,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr,,,,
+ice_sh,static,20C,,s3://ncar-cesm-lens/ice_sh/monthly/cesmLE-RCP85-hi.zarr,,,,
+lnd,daily,CTRL,FSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-CTRL-FSNO.zarr,fraction of ground covered by snow,2.0,0403-01-01 12:00:00,2200-12-31 12:00:00
+lnd,daily,CTRL,H2OSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-CTRL-H2OSNO.zarr,snow depth (liquid water),2.0,0403-01-01 12:00:00,2200-12-31 12:00:00
+lnd,daily,CTRL,QRUNOFF,s3://ncar-cesm-lens/lnd/daily/cesmLE-CTRL-QRUNOFF.zarr,total liquid runoff (does not include qsnwcpice),2.0,0403-01-01 12:00:00,2200-12-31 12:00:00
+lnd,daily,CTRL,RAIN,s3://ncar-cesm-lens/lnd/daily/cesmLE-CTRL-RAIN.zarr,atmospheric rain,2.0,0403-01-01 12:00:00,2200-12-31 12:00:00
+lnd,daily,CTRL,SNOW,s3://ncar-cesm-lens/lnd/daily/cesmLE-CTRL-SNOW.zarr,atmospheric snow,2.0,0403-01-01 12:00:00,2200-12-31 12:00:00
+lnd,daily,CTRL,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/daily/cesmLE-CTRL-SOILWATER_10CM.zarr,soil liquid water + ice in top 10cm of soil (veg landunits only),2.0,0403-01-01 12:00:00,2200-12-31 12:00:00
+lnd,daily,HIST,FSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-HIST-FSNO.zarr,fraction of ground covered by snow,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+lnd,daily,HIST,H2OSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-HIST-H2OSNO.zarr,snow depth (liquid water),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+lnd,daily,HIST,QRUNOFF,s3://ncar-cesm-lens/lnd/daily/cesmLE-HIST-QRUNOFF.zarr,total liquid runoff (does not include qsnwcpice),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+lnd,daily,HIST,RAIN,s3://ncar-cesm-lens/lnd/daily/cesmLE-HIST-RAIN.zarr,atmospheric rain,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+lnd,daily,HIST,SNOW,s3://ncar-cesm-lens/lnd/daily/cesmLE-HIST-SNOW.zarr,atmospheric snow,1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+lnd,daily,HIST,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/daily/cesmLE-HIST-SOILWATER_10CM.zarr,soil liquid water + ice in top 10cm of soil (veg landunits only),1.0,1850-01-01 12:00:00,1919-12-31 12:00:00
+lnd,daily,RCP85,FSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-FSNO.zarr,fraction of ground covered by snow,2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
+lnd,daily,RCP85,H2OSNO,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-H2OSNO.zarr,snow depth (liquid water),2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
+lnd,daily,RCP85,QRUNOFF,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-QRUNOFF.zarr,total liquid runoff (does not include qsnwcpice),2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
+lnd,daily,RCP85,RAIN,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-RAIN.zarr,atmospheric rain,2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
+lnd,daily,RCP85,SNOW,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-SNOW.zarr,atmospheric snow,2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
+lnd,daily,RCP85,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-SOILWATER_10CM.zarr,soil liquid water + ice in top 10cm of soil (veg landunits only),2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
+lnd,monthly,20C,FSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-FSNO.zarr,fraction of ground covered by snow,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+lnd,monthly,20C,H2OSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-H2OSNO.zarr,snow depth (liquid water),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+lnd,monthly,20C,QRUNOFF,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-QRUNOFF.zarr,total liquid runoff (does not include qsnwcpice),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+lnd,monthly,20C,RAIN,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-RAIN.zarr,atmospheric rain,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+lnd,monthly,20C,SNOW,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-SNOW.zarr,atmospheric snow,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+lnd,monthly,20C,SOILLIQ,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-SOILLIQ.zarr,soil liquid water (vegetated landunits only),3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+lnd,monthly,20C,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-SOILWATER_10CM.zarr,soil liquid water + ice in top 10cm of soil (veg landunits only),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+lnd,monthly,CTRL,FSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-CTRL-FSNO.zarr,fraction of ground covered by snow,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+lnd,monthly,CTRL,H2OSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-CTRL-H2OSNO.zarr,snow depth (liquid water),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+lnd,monthly,CTRL,QRUNOFF,s3://ncar-cesm-lens/lnd/monthly/cesmLE-CTRL-QRUNOFF.zarr,total liquid runoff (does not include qsnwcpice),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+lnd,monthly,CTRL,RAIN,s3://ncar-cesm-lens/lnd/monthly/cesmLE-CTRL-RAIN.zarr,atmospheric rain,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+lnd,monthly,CTRL,SNOW,s3://ncar-cesm-lens/lnd/monthly/cesmLE-CTRL-SNOW.zarr,atmospheric snow,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+lnd,monthly,CTRL,SOILLIQ,s3://ncar-cesm-lens/lnd/monthly/cesmLE-CTRL-SOILLIQ.zarr,soil liquid water (vegetated landunits only),3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+lnd,monthly,CTRL,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/monthly/cesmLE-CTRL-SOILWATER_10CM.zarr,soil liquid water + ice in top 10cm of soil (veg landunits only),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+lnd,monthly,HIST,FSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-HIST-FSNO.zarr,fraction of ground covered by snow,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+lnd,monthly,HIST,H2OSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-HIST-H2OSNO.zarr,snow depth (liquid water),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+lnd,monthly,HIST,QRUNOFF,s3://ncar-cesm-lens/lnd/monthly/cesmLE-HIST-QRUNOFF.zarr,total liquid runoff (does not include qsnwcpice),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+lnd,monthly,HIST,RAIN,s3://ncar-cesm-lens/lnd/monthly/cesmLE-HIST-RAIN.zarr,atmospheric rain,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+lnd,monthly,HIST,SNOW,s3://ncar-cesm-lens/lnd/monthly/cesmLE-HIST-SNOW.zarr,atmospheric snow,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+lnd,monthly,HIST,SOILLIQ,s3://ncar-cesm-lens/lnd/monthly/cesmLE-HIST-SOILLIQ.zarr,soil liquid water (vegetated landunits only),2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+lnd,monthly,HIST,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/monthly/cesmLE-HIST-SOILWATER_10CM.zarr,soil liquid water + ice in top 10cm of soil (veg landunits only),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+lnd,monthly,RCP85,FSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-FSNO.zarr,fraction of ground covered by snow,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+lnd,monthly,RCP85,H2OSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-H2OSNO.zarr,snow depth (liquid water),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+lnd,monthly,RCP85,QRUNOFF,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-QRUNOFF.zarr,total liquid runoff (does not include qsnwcpice),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+lnd,monthly,RCP85,RAIN,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-RAIN.zarr,atmospheric rain,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+lnd,monthly,RCP85,SNOW,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SNOW.zarr,atmospheric snow,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+lnd,monthly,RCP85,SOILLIQ,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILLIQ.zarr,soil liquid water (vegetated landunits only),3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+lnd,monthly,RCP85,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr,soil liquid water + ice in top 10cm of soil (veg landunits only),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+lnd,static,CTRL,,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr,,,,
+lnd,static,HIST,,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr,,,,
+lnd,static,RCP85,,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr,,,,
+lnd,static,20C,,s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr,,,,
+ocn,monthly,20C,DIC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-DIC.zarr,dissolved inorganic carbon,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,DOC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-DOC.zarr,dissolved organic carbon,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,FW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-FW.zarr,freshwater flux,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,HMXL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-HMXL.zarr,mixed-layer depth,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,O2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-O2.zarr,dissolved oxygen,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,PD,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-PD.zarr,potential density ref to surface,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,QFLUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-QFLUX.zarr,internal ocean heat flux due to ice formation; heat of fusion > 0 or ice-melting potential < 0,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,QSW_HBL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-QSW_HBL.zarr,solar short-wave heat flux in bndry layer,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,QSW_HTP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-QSW_HTP.zarr,solar short-wave heat flux in top layer,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,RESID_S,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-RESID_S.zarr,free-surface residual flux (s),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,SALT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SALT.zarr,salinity,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,SFWF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SFWF.zarr,virtual salt flux in fw flux formulation,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,SFWF_WRST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SFWF_WRST.zarr,virtual salt flux due to weak restoring,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,SHF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SHF.zarr,"total surface heat flux, including sw",2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,SHF_QSW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SHF_QSW.zarr,solar short-wave heat flux,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,SSH,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SSH.zarr,sea surface height,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,SST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SST.zarr,potential temperature,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,TAUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TAUX.zarr,windstress in grid-x direction,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,TAUX2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TAUX2.zarr,windstress**2 in grid-x direction,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,TAUY,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TAUY.zarr,windstress in grid-y direction,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,TAUY2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TAUY2.zarr,windstress**2 in grid-y direction,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,TEMP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TEMP.zarr,potential temperature,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,UES,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-UES.zarr,salt flux in grid-x direction,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,UET,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-UET.zarr,flux of heat in grid-x direction,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,UVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-UVEL.zarr,velocity in grid-x direction,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,VNS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-VNS.zarr,salt flux in grid-y direction,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,VNT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-VNT.zarr,flux of heat in grid-y direction,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,VVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-VVEL.zarr,velocity in grid-y direction,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,WTS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-WTS.zarr,salt flux across top face,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,WTT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-WTT.zarr,heat flux across top face,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,20C,WVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-WVEL.zarr,vertical velocity,3.0,1920-01-16 12:00:00,2005-12-16 12:00:00
+ocn,monthly,CTRL,DIC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-DIC.zarr,dissolved inorganic carbon,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,DOC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-DOC.zarr,dissolved organic carbon,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,FW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-FW.zarr,freshwater flux,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,HMXL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-HMXL.zarr,mixed-layer depth,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,O2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-O2.zarr,dissolved oxygen,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,PD,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-PD.zarr,potential density ref to surface,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,QFLUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-QFLUX.zarr,internal ocean heat flux due to ice formation; heat of fusion > 0 or ice-melting potential < 0,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,QSW_HBL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-QSW_HBL.zarr,solar short-wave heat flux in bndry layer,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,QSW_HTP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-QSW_HTP.zarr,solar short-wave heat flux in top layer,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,RESID_S,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-RESID_S.zarr,free-surface residual flux (s),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,SALT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SALT.zarr,salinity,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,SFWF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SFWF.zarr,virtual salt flux in fw flux formulation,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,SFWF_WRST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SFWF_WRST.zarr,virtual salt flux due to weak restoring,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,SHF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SHF.zarr,"total surface heat flux, including sw",2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,SHF_QSW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SHF_QSW.zarr,solar short-wave heat flux,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,SSH,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SSH.zarr,sea surface height,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,SST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SST.zarr,potential temperature,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,TAUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TAUX.zarr,windstress in grid-x direction,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,TAUX2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TAUX2.zarr,windstress**2 in grid-x direction,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,TAUY,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TAUY.zarr,windstress in grid-y direction,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,TAUY2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TAUY2.zarr,windstress**2 in grid-y direction,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,TEMP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TEMP.zarr,potential temperature,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,UES,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-UES.zarr,salt flux in grid-x direction,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,UET,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-UET.zarr,flux of heat in grid-x direction,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,UVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-UVEL.zarr,velocity in grid-x direction,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,VNS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-VNS.zarr,salt flux in grid-y direction,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,VNT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-VNT.zarr,flux of heat in grid-y direction,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,VVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-VVEL.zarr,velocity in grid-y direction,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,WTS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-WTS.zarr,salt flux across top face,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,WTT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-WTT.zarr,heat flux across top face,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,CTRL,WVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-WVEL.zarr,vertical velocity,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+ocn,monthly,HIST,DIC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-DIC.zarr,dissolved inorganic carbon,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,DOC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-DOC.zarr,dissolved organic carbon,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,FW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-FW.zarr,freshwater flux,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,HMXL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-HMXL.zarr,mixed-layer depth,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,O2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-O2.zarr,dissolved oxygen,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,PD,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-PD.zarr,potential density ref to surface,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,QFLUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-QFLUX.zarr,internal ocean heat flux due to ice formation; heat of fusion > 0 or ice-melting potential < 0,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,QSW_HBL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-QSW_HBL.zarr,solar short-wave heat flux in bndry layer,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,QSW_HTP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-QSW_HTP.zarr,solar short-wave heat flux in top layer,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,RESID_S,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-RESID_S.zarr,free-surface residual flux (s),1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,SALT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-SALT.zarr,salinity,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,SFWF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-SFWF.zarr,virtual salt flux in fw flux formulation,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,SFWF_WRST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-SFWF_WRST.zarr,virtual salt flux due to weak restoring,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,SHF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-SHF.zarr,"total surface heat flux, including sw",1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,SHF_QSW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-SHF_QSW.zarr,solar short-wave heat flux,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,SSH,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-SSH.zarr,sea surface height,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,SST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-SST.zarr,potential temperature,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,TAUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-TAUX.zarr,windstress in grid-x direction,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,TAUX2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-TAUX2.zarr,windstress**2 in grid-x direction,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,TAUY,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-TAUY.zarr,windstress in grid-y direction,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,TAUY2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-TAUY2.zarr,windstress**2 in grid-y direction,1.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,TEMP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-TEMP.zarr,potential temperature,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,UES,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-UES.zarr,salt flux in grid-x direction,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,UET,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-UET.zarr,flux of heat in grid-x direction,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,UVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-UVEL.zarr,velocity in grid-x direction,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,VNS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-VNS.zarr,salt flux in grid-y direction,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,VNT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-VNT.zarr,flux of heat in grid-y direction,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,VVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-VVEL.zarr,velocity in grid-y direction,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,WTS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-WTS.zarr,salt flux across top face,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,WTT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-WTT.zarr,heat flux across top face,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,HIST,WVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-HIST-WVEL.zarr,vertical velocity,2.0,1850-01-16 12:00:00,1919-12-16 12:00:00
+ocn,monthly,RCP85,DIC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-DIC.zarr,dissolved inorganic carbon,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,DOC,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-DOC.zarr,dissolved organic carbon,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,FW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-FW.zarr,freshwater flux,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,HMXL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-HMXL.zarr,mixed-layer depth,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,O2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-O2.zarr,dissolved oxygen,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,PD,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-PD.zarr,potential density ref to surface,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,QFLUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-QFLUX.zarr,internal ocean heat flux due to ice formation; heat of fusion > 0 or ice-melting potential < 0,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,QSW_HBL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-QSW_HBL.zarr,solar short-wave heat flux in bndry layer,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,QSW_HTP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-QSW_HTP.zarr,solar short-wave heat flux in top layer,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,RESID_S,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-RESID_S.zarr,free-surface residual flux (s),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,SALT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SALT.zarr,salinity,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,SFWF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SFWF.zarr,virtual salt flux in fw flux formulation,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,SFWF_WRST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SFWF_WRST.zarr,virtual salt flux due to weak restoring,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,SHF,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SHF.zarr,"total surface heat flux, including sw",2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,SHF_QSW,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SHF_QSW.zarr,solar short-wave heat flux,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,SSH,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SSH.zarr,sea surface height,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,SST,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SST.zarr,potential temperature,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,TAUX,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TAUX.zarr,windstress in grid-x direction,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,TAUX2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TAUX2.zarr,windstress**2 in grid-x direction,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,TAUY,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TAUY.zarr,windstress in grid-y direction,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,TAUY2,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TAUY2.zarr,windstress**2 in grid-y direction,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,TEMP,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TEMP.zarr,potential temperature,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,UES,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UES.zarr,salt flux in grid-x direction,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,UET,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UET.zarr,flux of heat in grid-x direction,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,UVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UVEL.zarr,velocity in grid-x direction,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,VNS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VNS.zarr,salt flux in grid-y direction,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,VNT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VNT.zarr,flux of heat in grid-y direction,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,VVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VVEL.zarr,velocity in grid-y direction,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,WTS,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WTS.zarr,salt flux across top face,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,WTT,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WTT.zarr,heat flux across top face,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,monthly,RCP85,WVEL,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr,vertical velocity,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+ocn,static,CTRL,,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr,,,,
+ocn,static,HIST,,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr,,,,
+ocn,static,RCP85,,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr,,,,
+ocn,static,20C,,s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr,,,,

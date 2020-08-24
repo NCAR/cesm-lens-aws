@@ -4,26 +4,59 @@
   "description": "This is an ESM collection for CESM1 Large Ensemble Zarr dataset publicly available on Amazon S3 (us-west-2 region)",
   "catalog_file": "https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.csv",
   "attributes": [
-    { "column_name": "component", "vocabulary": "" },
-    { "column_name": "frequency", "vocabulary": "" },
-    { "column_name": "experiment", "vocabulary": "" },
-    { "column_name": "variable", "vocabulary": "" },
-    { "column_name": "variable_long_name", "vocabulary": "" },
-    { "column_name": "dim_per_tstep", "vocabulary": "" },
-    { "column_name": "start", "vocabulary": "" },
-    { "column_name": "end", "vocabulary": "" }
+    {
+      "column_name": "component",
+      "vocabulary": ""
+    },
+    {
+      "column_name": "frequency",
+      "vocabulary": ""
+    },
+    {
+      "column_name": "experiment",
+      "vocabulary": ""
+    },
+    {
+      "column_name": "variable",
+      "vocabulary": ""
+    },
+    {
+      "column_name": "variable_long_name",
+      "vocabulary": ""
+    },
+    {
+      "column_name": "dim_per_tstep",
+      "vocabulary": ""
+    },
+    {
+      "column_name": "start",
+      "vocabulary": ""
+    },
+    {
+      "column_name": "end",
+      "vocabulary": ""
+    }
   ],
-  "assets": { "column_name": "path", "format": "zarr" },
+  "assets": {
+    "column_name": "path",
+    "format": "zarr"
+  },
   "aggregation_control": {
     "variable_column_name": "variable",
-    "groupby_attrs": ["component", "experiment", "frequency"],
+    "groupby_attrs": [
+      "component",
+      "experiment",
+      "frequency"
+    ],
     "aggregations": [
       {
         "type": "union",
         "attribute_name": "variable",
-        "options": { "compat": "override" }
+        "options": {
+          "compat": "override"
+        }
       }
     ]
   },
-  "last_updated": "2020-08-21T04:09:16Z"
+  "last_updated": "2020-08-24T15:47:55Z"
 }
