@@ -26,7 +26,7 @@ def build_catalog(bucket='ncar-cesm-lens'):
         stores.extend(s)
 
     entries = []
-    for store in tqdm(stores[:5]):
+    for store in tqdm(stores):
         try:
             path_components = store.split('/')
             component, frequency = path_components[1], path_components[2]
@@ -88,4 +88,4 @@ if __name__ == '__main__':
     data['last_updated'] = last_updated
 
     with open(here / 'aws-cesm1-le.json', 'w') as fout:
-        json.dump(data, fout)
+        json.dump(data, fout, indent=2)
