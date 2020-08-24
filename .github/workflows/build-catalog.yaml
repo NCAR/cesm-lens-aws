@@ -1,0 +1,71 @@
+name: Update catalog
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "intake-catalogs/*"
+
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "intake-catalogs/*"
+
+  workflow_dispatch: # allows you to trigger manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install fsspec xarray cftime dask[complete] zarr s3fs tqdm
+
+      - name: Update catalog
+        run: |
+          python intake-catalogs/catalog-builder.py
+          git status
+
+      # - name: Upload to S3
+      #   if: github.ref == 'refs/heads/master'
+      #   uses: jakejarvis/s3-sync-action@master
+      #   with:
+      #     args: --exclude "*" --include "aws-cesm1-le*"
+      #   env:
+      #     AWS_S3_BUCKET: s3://ncar-cesm-lens/catalogs/
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+      #     AWS_REGION: us-west-2
+      #     SOURCE_DIR: intake-catalogs
+
+      - name: Configure AWS credentials
+        if: github.ref == 'refs/heads/master'
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-west-2
+
+      - name: Upload to S3
+        if: github.ref == 'refs/heads/master'
+        run: |
+          aws s3 sync intake-catalogs s3://ncar-cesm-lens/catalogs/ --exclude "*" --include "aws-cesm1-le*"
+
+      - name: Push commit
+        if: github.ref == 'refs/heads/master'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
+          force: true
+          directory: intake-catalogs
