@@ -1,2 +1,2 @@
 # Note that there must be a tag
-FROM pangeo/base-image:2020.06.10
+FROM pangeo/base-image:e9c65e8
