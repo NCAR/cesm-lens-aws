@@ -94,8 +94,11 @@ atm,hourly6-1990-2005,20C,U,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C
 atm,hourly6-1990-2005,20C,Z3,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-Z3.zarr,geopotential height (above sea level),3.0,1990-01-01 00:00:00,2006-01-01 00:00:00
 atm,hourly6-2026-2035,RCP85,FLNS,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-FLNS.zarr,net longwave flux at surface,2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
 atm,hourly6-2026-2035,RCP85,FSNS,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-FSNS.zarr,net solar flux at surface,2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,PRECT,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-PRECT.zarr,total (convective and large-scale) precipitation rate (liq + ice),2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,PS,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-PS.zarr,surface pressure,2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
 atm,hourly6-2026-2035,RCP85,PSL,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-PSL.zarr,sea level pressure,2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
 atm,hourly6-2026-2035,RCP85,Q,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-Q.zarr,specific humidity,3.0,2026-01-01 00:00:00,2036-01-01 00:00:00
+atm,hourly6-2026-2035,RCP85,QREFHT,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-QREFHT.zarr,reference height humidity,2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
 atm,hourly6-2026-2035,RCP85,T,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-T.zarr,temperature,3.0,2026-01-01 00:00:00,2036-01-01 00:00:00
 atm,hourly6-2026-2035,RCP85,TREFHT,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-TREFHT.zarr,reference height temperature,2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
 atm,hourly6-2026-2035,RCP85,TS,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-TS.zarr,surface temperature (radiative),2.0,2026-01-01 00:00:00,2036-01-01 00:00:00
@@ -103,8 +106,11 @@ atm,hourly6-2026-2035,RCP85,U,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-R
 atm,hourly6-2026-2035,RCP85,Z3,s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-Z3.zarr,geopotential height (above sea level),3.0,2026-01-01 00:00:00,2036-01-01 00:00:00
 atm,hourly6-2071-2080,RCP85,FLNS,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-FLNS.zarr,net longwave flux at surface,2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
 atm,hourly6-2071-2080,RCP85,FSNS,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-FSNS.zarr,net solar flux at surface,2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,PRECT,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-PRECT.zarr,total (convective and large-scale) precipitation rate (liq + ice),2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,PS,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-PS.zarr,surface pressure,2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
 atm,hourly6-2071-2080,RCP85,PSL,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-PSL.zarr,sea level pressure,2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
 atm,hourly6-2071-2080,RCP85,Q,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-Q.zarr,specific humidity,3.0,2071-01-01 00:00:00,2081-01-01 00:00:00
+atm,hourly6-2071-2080,RCP85,QREFHT,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-QREFHT.zarr,reference height humidity,2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
 atm,hourly6-2071-2080,RCP85,T,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-T.zarr,temperature,3.0,2071-01-01 00:00:00,2081-01-01 00:00:00
 atm,hourly6-2071-2080,RCP85,TREFHT,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-TREFHT.zarr,reference height temperature,2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
 atm,hourly6-2071-2080,RCP85,TS,s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-TS.zarr,surface temperature (radiative),2.0,2071-01-01 00:00:00,2081-01-01 00:00:00
@@ -145,6 +151,7 @@ atm,monthly,CTRL,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECC.zarr,co
 atm,monthly,CTRL,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
 atm,monthly,CTRL,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECSC.zarr,convective snow rate (water equivalent),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
 atm,monthly,CTRL,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
+atm,monthly,CTRL,PS,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PS.zarr,surface pressure,2.0,0400-01-16 12:00:00,0446-02-17 13:16:18.871345
 atm,monthly,CTRL,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-PSL.zarr,sea level pressure,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
 atm,monthly,CTRL,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-Q.zarr,specific humidity,3.0,0400-01-16 12:00:00,2200-12-16 12:00:00
 atm,monthly,CTRL,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-SHFLX.zarr,surface sensible heat flux,2.0,0400-01-16 12:00:00,2200-12-16 12:00:00
@@ -191,6 +198,7 @@ atm,monthly,RCP85,PRECC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECC.zarr,
 atm,monthly,RCP85,PRECL,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 atm,monthly,RCP85,PRECSC,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECSC.zarr,convective snow rate (water equivalent),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 atm,monthly,RCP85,PRECSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
+atm,monthly,RCP85,PS,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PS.zarr,surface pressure,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 atm,monthly,RCP85,PSL,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-PSL.zarr,sea level pressure,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 atm,monthly,RCP85,Q,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-Q.zarr,specific humidity,3.0,2006-01-16 12:00:00,2100-12-16 12:00:00
 atm,monthly,RCP85,SHFLX,s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-SHFLX.zarr,surface sensible heat flux,2.0,2006-01-16 12:00:00,2100-12-16 12:00:00
