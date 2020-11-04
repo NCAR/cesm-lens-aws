@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Install the JupyterLab dask-labextension
+jupyter labextension install dask-labextension @jupyter-widgets/jupyterlab-manager @bokeh/jupyter_bokeh @pyviz/jupyterlab_pyviz @jupyterlab/toc
+
+export DASK_TICK_MAXIMUM_DELAY=5s
+export DASK_DISTRIBUTED__DIAGNOSTICS_LINK={JUPYTERHUB_SERVICE_PREFIX}proxy/{port}/status
+
+#EOF

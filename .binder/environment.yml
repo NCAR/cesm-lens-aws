@@ -1,0 +1,16 @@
+name: notebook
+channels:
+  - conda-forge
+dependencies:
+  - cartopy
+  - cftime
+  - cmaps
+  - intake-esm>=2020.11.4
+  - nbgitpuller
+  - nc-time-axis
+  - panel
+  - pangeo-notebook>=2020.10.08
+  - pip
+  - s3fs
+  - voila
+  - watermark
