@@ -16,8 +16,8 @@ jobs:
     name: Lint Yaml
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: jacobtomlinson/gha-lint-yaml@master
-      with:
-        path: binder-gallery.yaml
-        strict: true
+      - uses: actions/checkout@v2
+      - uses: jacobtomlinson/gha-lint-yaml@master
+        with:
+          path: binder-gallery.yaml
+          strict: true

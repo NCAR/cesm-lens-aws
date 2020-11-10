@@ -1,4 +1,3 @@
-
 ## Update the catalog
 
 ```bash
