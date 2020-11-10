@@ -34,9 +34,7 @@ def build_catalog(bucket='ncar-cesm-lens'):
             path = f's3://{store}'
             if frequency != 'static':
                 _, experiment, variable = path_components[-1].split('.')[0].split('-')
-                ds = xr.open_zarr(
-                    fs.get_mapper(path), consolidated=True, decode_cf=False
-                )
+                ds = xr.open_zarr(fs.get_mapper(path), consolidated=True, decode_cf=False)
                 long_name = ds[variable].attrs.get('long_name', None)
                 dim_per_tsep = ds[variable].data.ndim - 2
 

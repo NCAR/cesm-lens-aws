@@ -12,7 +12,7 @@ repos:
     rev: 20.8b1
     hooks:
       - id: black
-        args: ["--skip-string-normalization"]
+        args: ['--skip-string-normalization']
 
   - repo: https://gitlab.com/pycqa/flake8
     rev: 3.8.4
@@ -23,3 +23,8 @@ repos:
     rev: 2.1.2
     hooks:
       - id: prettier
+
+  - repo: https://github.com/deathbeds/prenotebook
+    rev: f5bdb72a400f1a56fe88109936c83aa12cc349fa
+    hooks:
+      - id: prenotebook

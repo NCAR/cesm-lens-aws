@@ -5,13 +5,13 @@ on:
     branches:
       - master
     paths:
-      - "intake-catalogs/*"
+      - 'intake-catalogs/*'
 
   pull_request:
     branches:
       - master
     paths:
-      - "intake-catalogs/*"
+      - 'intake-catalogs/*'
 
   workflow_dispatch: # allows you to trigger manually
 
