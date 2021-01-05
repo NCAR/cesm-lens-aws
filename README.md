@@ -6,6 +6,7 @@
   - [Requirements](#requirements)
   - [Examples](#examples)
   - [Reference Documentation](#reference-documentation)
+  - [Source Code for CESM LENS on AWS Site](#source-code-for-cesm-lens-on-aws-site)
 
 Examples of analysis of [CESM LENS data](https://registry.opendata.aws/ncar-cesm-lens/) publicly available on Amazon S3 (us-west-2 region) using xarray and dask.
 
@@ -92,4 +93,9 @@ Attributes:
 
 ## Reference Documentation
 
-For details about intake-esm API, see the [reference documentation](https://intake-esm.readthedocs.io/en/latest)
+- For details about intake-esm API, see the [reference documentation](https://intake-esm.readthedocs.io/en/latest)
+- [CESM LENS on AWS Site](https://doi.org/10.26024/wt24-5j82)
+
+## Source Code for CESM LENS on AWS Site
+
+The source code for [https://doi.org/10.26024/wt24-5j82](https://doi.org/10.26024/wt24-5j82) resides in the [docs-site](https://github.com/NCAR/cesm-lens-aws/tree/docs-site) branch of this repository

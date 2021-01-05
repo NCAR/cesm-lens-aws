@@ -1,10 +1,11 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.3.0
+    rev: v3.4.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-docstring-first
+      - id: check-json
       - id: check-yaml
       - id: double-quote-string-fixer
 
@@ -12,19 +13,47 @@ repos:
     rev: 20.8b1
     hooks:
       - id: black
-        args: ['--skip-string-normalization']
+
+  - repo: https://github.com/keewis/blackdoc
+    rev: v0.3.1
+    hooks:
+      - id: blackdoc
 
   - repo: https://gitlab.com/pycqa/flake8
     rev: 3.8.4
     hooks:
       - id: flake8
 
-  - repo: https://github.com/prettier/prettier
-    rev: 2.1.2
+  - repo: https://github.com/asottile/seed-isort-config
+    rev: v2.2.0
+    hooks:
+      - id: seed-isort-config
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.7.0
+    hooks:
+      - id: isort
+
+  - repo: https://github.com/prettier/pre-commit
+    rev: 57f39166b5a5a504d6808b87ab98d41ebf095b46
     hooks:
       - id: prettier
-
   - repo: https://github.com/deathbeds/prenotebook
     rev: f5bdb72a400f1a56fe88109936c83aa12cc349fa
     hooks:
       - id: prenotebook
+        args:
+          [
+            '--keep-output',
+            '--keep-metadata',
+            '--keep-execution-count',
+            '--keep-empty',
+          ]
+  # - repo: https://github.com/nbQA-dev/nbQA
+  #   rev: 0.5.6
+  #   hooks:
+  #     - id: nbqa-black
+  #       additional_dependencies: [black==20.8b1]
+  #     - id: nbqa-pyupgrade
+  #       additional_dependencies: [pyupgrade==2.7.3]
+  #     - id: nbqa-isort
+  #       additional_dependencies: [isort==5.6.4]
