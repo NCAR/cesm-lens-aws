@@ -44,7 +44,7 @@ jobs:
           echo binder_repo: "${{ steps.parse.outputs.binder_repo }}"
           echo binder_ref: "${{ steps.parse.outputs.binder_ref }}"
           echo binderbot_target_branch: "${{ steps.parse.outputs.binderbot_target_branch }}"
-      - uses: actions/setup-python@v1
+      - uses: actions/setup-python@v2
         with:
           python-version: '3.8'
           architecture: 'x64'
