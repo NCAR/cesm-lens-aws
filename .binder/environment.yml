@@ -10,13 +10,16 @@ dependencies:
   - distributed
   - fsspec
   - intake-esm>=2021.1.15
+  - ipywidgets
+  - jupyter-server-proxy
+  - jupyterhub-singleuser
   - jupyterlab>=3
   - nbgitpuller
   - nc-time-axis
+  - nodejs
   - panel
-  - pangeo-notebook>=2021.01.16
+  - pangeo-dask
   - pip
-  - s3fs
   - s3fs
   - voila
   - watermark
