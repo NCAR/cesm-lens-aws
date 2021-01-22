@@ -5,9 +5,11 @@ dependencies:
   - cartopy
   - cftime
   - cmaps
-  - dask
+  - dask>=2021.1.0
+  - dask-gateway>=0.9.0
+  - dask-kubernetes>=0.11.0
   - dask-labextension
-  - distributed
+  - distributed >=2021.1.0
   - fsspec
   - intake-esm>=2021.1.15
   - ipywidgets
@@ -18,7 +20,6 @@ dependencies:
   - nc-time-axis
   - nodejs
   - panel
-  - pangeo-dask
   - pip
   - s3fs
   - voila
