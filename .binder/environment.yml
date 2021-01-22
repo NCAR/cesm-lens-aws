@@ -5,12 +5,18 @@ dependencies:
   - cartopy
   - cftime
   - cmaps
-  - intake-esm>=2020.11.4
+  - dask
+  - dask-labextension
+  - distributed
+  - fsspec
+  - intake-esm>=2021.1.15
+  - jupyterlab>=3
   - nbgitpuller
   - nc-time-axis
   - panel
-  - pangeo-notebook>=2020.10.08
+  - pangeo-notebook>=2021.01.16
   - pip
+  - s3fs
   - s3fs
   - voila
   - watermark
