@@ -36,8 +36,14 @@
       "column_name": "end_time",
       "vocabulary": ""
     },
-    { "column_name": "units", "vocabulary": "" },
-    { "column_name": "spatial_domain", "vocabulary": "" }
+    {
+      "column_name": "units",
+      "vocabulary": ""
+    },
+    {
+      "column_name": "spatial_domain",
+      "vocabulary": ""
+    }
   ],
   "assets": {
     "column_name": "path",
@@ -45,7 +51,11 @@
   },
   "aggregation_control": {
     "variable_column_name": "variable",
-    "groupby_attrs": ["component", "experiment", "frequency"],
+    "groupby_attrs": [
+      "component",
+      "experiment",
+      "frequency"
+    ],
     "aggregations": [
       {
         "type": "union",
@@ -56,5 +66,5 @@
       }
     ]
   },
-  "last_updated": "2021-02-20T20:56:12Z"
+  "last_updated": "2021-02-20T23:43:08Z"
 }
