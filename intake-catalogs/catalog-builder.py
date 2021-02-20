@@ -78,6 +78,7 @@ def build_catalog(bucket='ncar-cesm-lens'):
                         'frequency': frequency,
                         'path': path,
                         'experiment': exp,
+                        'spatial_domain': regions[component],
                     }
                     for exp in experiments
                 ]
