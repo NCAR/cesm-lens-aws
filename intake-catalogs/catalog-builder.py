@@ -3,6 +3,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 
+import cf_xarray  # noqa
 import fsspec
 import pandas as pd
 import xarray as xr
@@ -17,6 +18,13 @@ def build_catalog(bucket='ncar-cesm-lens'):
     frequencies = []
     components = ['ice_nh', 'ice_sh', 'lnd', 'ocn', 'atm']
     experiments = ['CTRL', 'HIST', 'RCP85', '20C']
+    regions = {
+        'atm': 'global',
+        'ocn': 'global_ocean',
+        'lnd': 'global_land',
+        'ice_nh': 'artic_ocean',
+        'ice_sh': 'antarctica',
+    }
     for d in dirs:
         if d.split('/')[-1] in components:
             f = fs.ls(d)
@@ -28,43 +36,38 @@ def build_catalog(bucket='ncar-cesm-lens'):
         stores.extend(s)
 
     entries = []
-    for store in tqdm(stores):
+    for store in tqdm(sorted(stores)):
         try:
             path_components = store.split('/')
             component, frequency = path_components[1], path_components[2]
             path = f's3://{store}'
             if frequency != 'static':
-                _, experiment, variable = path_components[-1].split('.')[0].split('-')
-                ds = xr.open_zarr(fs.get_mapper(path), consolidated=True, decode_cf=False)
-                long_name = ds[variable].attrs.get('long_name', None)
-                dim_per_tsep = ds[variable].data.ndim - 2
 
-                start = str(
-                    xr.coding.times.decode_cf_datetime(
-                        ds.time[0],
-                        ds.time.attrs['units'],
-                        ds.time.attrs['calendar'],
-                        use_cftime=True,
-                    )
-                )
-                end = str(
-                    xr.coding.times.decode_cf_datetime(
-                        ds.time[-1],
-                        ds.time.attrs['units'],
-                        ds.time.attrs['calendar'],
-                        use_cftime=True,
-                    )
-                )
+                _, experiment, variable = path_components[-1].split('.')[0].split('-')
+                ds = xr.open_zarr(fs.get_mapper(path), consolidated=True, use_cftime=True)
+
+                start_time, end_time = str(ds.time[0].data), str(ds.time[-1].data)
+                long_name = ds[variable].attrs.get('long_name', None)
+                units = ds[variable].attrs.get('units', None)
+
+                vertical_levels = 1
+                try:
+                    vertical_levels = ds[ds.cf['vertical'].name].size
+                except KeyError:
+                    pass
+
                 entry = {
                     'component': component,
                     'frequency': frequency,
                     'experiment': experiment,
                     'variable': variable,
                     'path': path,
-                    'variable_long_name': long_name.lower(),
-                    'dim_per_tstep': dim_per_tsep,
-                    'start': start,
-                    'end': end,
+                    'long_name': long_name.lower(),
+                    'vertical_levels': vertical_levels,
+                    'start_time': start_time,
+                    'end_time': end_time,
+                    'spatial_domain': regions[component],
+                    'units': units,
                 }
                 entries.append(entry)
             else:
@@ -82,7 +85,20 @@ def build_catalog(bucket='ncar-cesm-lens'):
         except ValueError:
             print(store)
     df = pd.DataFrame(entries)
-    return df
+    columns = [
+        'variable',
+        'long_name',
+        'component',
+        'experiment',
+        'frequency',
+        'vertical_levels',
+        'spatial_domain',
+        'units',
+        'start_time',
+        'end_time',
+        'path',
+    ]
+    return df[columns]
 
 
 if __name__ == '__main__':

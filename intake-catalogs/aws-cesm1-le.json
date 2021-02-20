@@ -21,21 +21,23 @@
       "vocabulary": ""
     },
     {
-      "column_name": "variable_long_name",
+      "column_name": "long_name",
       "vocabulary": ""
     },
     {
-      "column_name": "dim_per_tstep",
+      "column_name": "vertical_levels",
       "vocabulary": ""
     },
     {
-      "column_name": "start",
+      "column_name": "start_time",
       "vocabulary": ""
     },
     {
-      "column_name": "end",
+      "column_name": "end_time",
       "vocabulary": ""
-    }
+    },
+    { "column_name": "units", "vocabulary": "" },
+    { "column_name": "spatial_domain", "vocabulary": "" }
   ],
   "assets": {
     "column_name": "path",
@@ -43,11 +45,7 @@
   },
   "aggregation_control": {
     "variable_column_name": "variable",
-    "groupby_attrs": [
-      "component",
-      "experiment",
-      "frequency"
-    ],
+    "groupby_attrs": ["component", "experiment", "frequency"],
     "aggregations": [
       {
         "type": "union",
