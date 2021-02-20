@@ -106,3 +106,4 @@ venv.bak/
 # Mac OSX
 **/.DS_Store
 node_modules/
+.eslintcache

@@ -6,5 +6,5 @@ description: >-
 gallery_repository: pangeo-gallery/pangeo-gallery
 binder_url: 'https://aws-uswest2-binder.pangeo.io'
 binder_repo: NCAR/cesm-lens-aws
-binder_ref: master
+binder_ref: main
 binderbot_target_branch: binderbot-built

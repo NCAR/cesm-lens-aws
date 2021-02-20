@@ -1,10 +1,10 @@
 name: Binderbot
 on:
   # Trigger the workflow on push or pull request,
-  # but only for the master branch
+  # but only for the main branch
   push:
     branches:
-      - master
+      - main
     paths:
       - 'notebooks/*.ipynb'
       - 'binder-gallery.yaml'
@@ -13,7 +13,7 @@ on:
       - '.binder/**'
   pull_request:
     branches:
-      - master
+      - main
     paths:
       - 'notebooks/*.ipynb'
       - 'binder-gallery.yaml'
@@ -62,14 +62,14 @@ jobs:
           --ref ${{ steps.parse.outputs.binder_ref }} \
           notebooks/*.ipynb
       - name: Commit files
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add binder-gallery.yaml thumbnail.png notebooks/*.ipynb
           git commit -m "Binderbot output"
       - name: Push commit
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
