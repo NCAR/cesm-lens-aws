@@ -76,13 +76,17 @@ atm,daily,RCP85,LHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-LHFLX.zarr,surf
 atm,daily,RCP85,PRECL,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECL.zarr,large-scale (stable) precipitation rate (liq + ice),2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
 atm,daily,RCP85,PRECSC,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECSC.zarr,convective snow rate (water equivalent),2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
 atm,daily,RCP85,PRECSL,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECSL.zarr,large-scale (stable) snow rate (water equivalent),2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,PRECT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PRECT.zarr,total (convective and large-scale) precipitation rate (liq + ice),2.0,2006-01-01 00:00:00,2100-12-30 00:00:00
 atm,daily,RCP85,PSL,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-PSL.zarr,sea level pressure,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,QBOT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-QBOT.zarr,lowest model level water vapor mixing ratio,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
 atm,daily,RCP85,SHFLX,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-SHFLX.zarr,surface sensible heat flux,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
 atm,daily,RCP85,TMQ,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TMQ.zarr,total (vertically integrated) precipitable water,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
 atm,daily,RCP85,TREFHT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHT.zarr,reference height temperature,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
 atm,daily,RCP85,TREFHTMN,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHTMN.zarr,minimum reference height temperature over output period,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
 atm,daily,RCP85,TREFHTMX,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TREFHTMX.zarr,maximum reference height temperature over output period,2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
 atm,daily,RCP85,TS,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TS.zarr,surface temperature (radiative),2.0,2006-01-01 12:00:00,2100-12-31 12:00:00
+atm,daily,RCP85,UBOT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-UBOT.zarr,lowest model level zonal wind,2.0,2006-01-01 00:00:00,2100-12-30 00:00:00
+atm,daily,RCP85,VBOT,s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-VBOT.zarr,lowest model level meridional wind,2.0,2006-01-01 00:00:00,2100-12-30 00:00:00
 atm,hourly6-1990-2005,20C,FLNS,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-FLNS.zarr,net longwave flux at surface,2.0,1990-01-01 00:00:00,2006-01-01 00:00:00
 atm,hourly6-1990-2005,20C,FSNS,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-FSNS.zarr,net solar flux at surface,2.0,1990-01-01 00:00:00,2006-01-01 00:00:00
 atm,hourly6-1990-2005,20C,PSL,s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-PSL.zarr,sea level pressure,2.0,1990-01-01 00:00:00,2006-01-01 00:00:00
@@ -268,6 +272,8 @@ lnd,daily,RCP85,QRUNOFF,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-QRUNOFF.zarr,
 lnd,daily,RCP85,RAIN,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-RAIN.zarr,atmospheric rain,2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
 lnd,daily,RCP85,SNOW,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-SNOW.zarr,atmospheric snow,2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
 lnd,daily,RCP85,SOILWATER_10CM,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-SOILWATER_10CM.zarr,soil liquid water + ice in top 10cm of soil (veg landunits only),2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
+lnd,daily,RCP85,TREFMNAV_U,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-TREFMNAV_U.zarr,urban daily minimum of average 2-m temperature,2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
+lnd,daily,RCP85,TREFMXAV_U,s3://ncar-cesm-lens/lnd/daily/cesmLE-RCP85-TREFMXAV_U.zarr,urban daily maximum of average 2-m temperature,2.0,2006-01-01 12:00:00,2101-01-01 12:00:00
 lnd,monthly,20C,FSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-FSNO.zarr,fraction of ground covered by snow,2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
 lnd,monthly,20C,H2OSNO,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-H2OSNO.zarr,snow depth (liquid water),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00
 lnd,monthly,20C,QRUNOFF,s3://ncar-cesm-lens/lnd/monthly/cesmLE-20C-QRUNOFF.zarr,total liquid runoff (does not include qsnwcpice),2.0,1920-01-16 12:00:00,2005-12-16 12:00:00

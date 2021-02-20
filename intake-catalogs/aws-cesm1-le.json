@@ -43,7 +43,11 @@
   },
   "aggregation_control": {
     "variable_column_name": "variable",
-    "groupby_attrs": ["component", "experiment", "frequency"],
+    "groupby_attrs": [
+      "component",
+      "experiment",
+      "frequency"
+    ],
     "aggregations": [
       {
         "type": "union",
@@ -54,5 +58,5 @@
       }
     ]
   },
-  "last_updated": "2021-01-05T19:32:32Z"
+  "last_updated": "2021-02-20T20:56:12Z"
 }
