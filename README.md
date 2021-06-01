@@ -1,3 +1,5 @@
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/NCAR/cesm-lens-aws/deploy-site/main?logo=github&style=for-the-badge)
+
 # CESM LENS on AWS
 
 - [CESM LENS on AWS](#cesm-lens-on-aws)
@@ -98,4 +100,28 @@ Attributes:
 
 ## Source Code for CESM LENS on AWS Site
 
-The source code for [https://doi.org/10.26024/wt24-5j82](https://doi.org/10.26024/wt24-5j82) resides in the [docs-site](https://github.com/NCAR/cesm-lens-aws/tree/docs-site) branch of this repository
+The source code for [https://doi.org/10.26024/wt24-5j82](https://doi.org/10.26024/wt24-5j82) resides in the [site directory](./site) of this repository.
+
+The site is built with [sphinx](https://www.sphinx-doc.org/).
+
+To build the site locally, please use [conda](https://docs.conda.io/) to set up a build environment with all dependencies.
+
+First, make a local clone of this source repository on your machine. For example:
+
+```bash
+git clone https://github.com/NCAR/cesm-lens-aws
+```
+
+Set up your a conda environment:
+
+```bash
+conda env create -f site/environment.yml
+conda activate cesm-lens-aws-site
+bash site/install-extension.sh
+```
+
+You can then build the site with:
+
+```bash
+make live
+```

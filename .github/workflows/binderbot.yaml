@@ -24,6 +24,7 @@ on:
 jobs:
   build:
     name: Binderbot Build
+    if: github.repository == 'NCAR/cesm-lens-aws'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
