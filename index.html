@@ -247,9 +247,29 @@ commentsRunWhenDOMLoaded(addUtterances);
 <h1>Community Earth System Model Large Ensemble (CESM LENS) Data Sets on AWS<a class="headerlink" href="#community-earth-system-model-large-ensemble-cesm-lens-data-sets-on-aws" title="Permalink to this headline">¶</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference external" href="https://ncar.ucar.edu/">National Center for Atmospheric Research (NCAR)</a> Community Earth System Model Large Ensemble (<a class="reference external" href="http://www.cesm.ucar.edu/projects/community-projects/LENS/">CESM LENS</a>) dataset includes a 40-member ensemble of climate simulations for the period 1920-2100. All model runs were subject to the same radiative forcing scenario: historical up to 2005, and RCP8.5 thereafter. (RCP8.5 - Representative Concentration Pathway 8.5 - refers to the worst-case scenario considered in the <a class="reference external" href="https://www.ipcc.ch/report/ar5/wg1/">Fifth Assessment Report</a> of the Intergovernmental Panel on Climate Change - IPCC). Each of the 40 runs begins from a slightly different initial atmospheric state (created by randomly perturbing temperatures at the level of round-off error). The data comprise both surface (2D) and volumetric (3D) variables in the atmosphere, ocean, land, and ice domains.</p>
-<p>The total LENS data volume is ~500 TB, and is traditionally accessible through the NCAR Climate Data Gateway (<a class="reference external" href="https://www.earthsystemgrid.org/dataset/ucar.cgd.ccsm4.CESM_CAM5_BGC_LE.html">CDG</a>) for download or via web services. A subset (currently ~70 TB compressed) including the most useful variables is now <a class="reference external" href="https://registry.opendata.aws/ncar-cesm-lens/">freely available on AWS S3</a> thanks to the <a class="reference external" href="https://aws.amazon.com/opendata/public-datasets/">AWS Public Dataset Program</a>.</p>
-<p>Slides from an informational briefing about this dataset are available <a class="reference external" href="http://ncar-aws-www.s3-website-us-west-2.amazonaws.com/20200212.CESM_LENS.AWStelecon.pdf">here</a>.</p>
+<p>The <a class="reference external" href="https://ncar.ucar.edu/">National Center for Atmospheric Research (NCAR)</a>
+Community Earth System Model Large Ensemble
+(<a class="reference external" href="http://www.cesm.ucar.edu/projects/community-projects/LENS/">CESM LENS</a>)
+dataset includes a 40-member ensemble of climate simulations for the period
+1920-2100. All model runs were subject to the same radiative forcing scenario:
+historical up to 2005, and RCP8.5 thereafter. (RCP8.5 - Representative
+Concentration Pathway 8.5 - refers to the worst-case scenario considered in the
+<a class="reference external" href="https://www.ipcc.ch/report/ar5/wg1/">Fifth Assessment Report</a> of the
+Intergovernmental Panel on Climate Change - IPCC). Each of the 40 runs begins
+from a slightly different initial atmospheric state (created by randomly
+perturbing temperatures at the level of round-off error). The data comprise both
+surface (2D) and volumetric (3D) variables in the atmosphere, ocean, land, and
+ice domains.</p>
+<p>The total LENS data volume is ~500 TB, and is traditionally accessible through
+the NCAR Climate Data Gateway
+(<a class="reference external" href="https://www.earthsystemgrid.org/dataset/ucar.cgd.ccsm4.CESM_CAM5_BGC_LE.html">CDG</a>)
+for download or via web services. A subset (currently ~70 TB compressed)
+including the most useful variables is now
+<a class="reference external" href="https://registry.opendata.aws/ncar-cesm-lens/">freely available on AWS S3</a>
+thanks to the
+<a class="reference external" href="https://aws.amazon.com/opendata/public-datasets/">AWS Public Dataset Program</a>.</p>
+<p>Slides from an informational briefing about this dataset are available
+<a class="reference external" href="http://ncar-aws-www.s3-website-us-west-2.amazonaws.com/20200212.CESM_LENS.AWStelecon.pdf">here</a>.</p>
 </section>
 <section id="accessing-cesm-lens-on-aws">
 <h2>Accessing CESM LENS on AWS<a class="headerlink" href="#accessing-cesm-lens-on-aws" title="Permalink to this headline">¶</a></h2>
@@ -262,27 +282,43 @@ commentsRunWhenDOMLoaded(addUtterances);
 </section>
 <section id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
-<p>Zarr format: The LENS data on AWS are structured according to the <a class="reference external" href="https://zarr.readthedocs.io/en/stable/">Zarr</a> storage format. There are independent Zarr stores for each component, frequency, experiment, and variable. The naming convention is: <code class="docutils literal notranslate"><span class="pre">{component}/{frequency}/cesmLE-{experiment}-{variable}.zarr</span></code> where:</p>
+<p>Zarr format: The LENS data on AWS are structured according to the
+<a class="reference external" href="https://zarr.readthedocs.io/en/stable/">Zarr</a> storage format. There are
+independent Zarr stores for each component, frequency, experiment, and variable.
+The naming convention is:
+<code class="docutils literal notranslate"><span class="pre">{component}/{frequency}/cesmLE-{experiment}-{variable}.zarr</span></code> where:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">component</span></code> = atm (atmosphere), lnd (land), ocn (ocean), ice_nh or ice_sh (ice, northern and southern hemispheres)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">frequency</span></code> = monthly, daily, or hourly6-startYear-endYear (6-hourly data are available for distinct periods)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">experiment</span></code> = 20C (20th century runs), RCP85 (RCP 8.5 runs), HIST (historical run), CTRL (fully-coupled control run), CTRL_AMIP (atmosphere-only control run), CTRL_SLAB (slab-ocean control run)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">component</span></code> = atm (atmosphere), lnd (land), ocn (ocean), ice_nh or ice_sh
+(ice, northern and southern hemispheres)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">frequency</span></code> = monthly, daily, or hourly6-startYear-endYear (6-hourly data are
+available for distinct periods)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">experiment</span></code> = 20C (20th century runs), RCP85 (RCP 8.5 runs), HIST (historical
+run), CTRL (fully-coupled control run), CTRL_AMIP (atmosphere-only control
+run), CTRL_SLAB (slab-ocean control run)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">variable</span></code> = one of the variable names listed in the tables below</p></li>
 </ul>
 <section id="data-catalog">
 <h3>Data Catalog<a class="headerlink" href="#data-catalog" title="Permalink to this headline">¶</a></h3>
-<p>The table below shows the available Zarr stores, including the experiments, variables, time ranges, and 2D or 3D nature (3D means multiple atmosphere levels or ocean depths are present). See also <a class="reference external" href="https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.json">collection description</a> and <a class="reference external" href="https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.csv">catalog file</a> used by <a class="reference external" href="https://intake-esm.readthedocs.io/">Intake-esm</a>.</p>
+<p>The table below shows the available Zarr stores, including the experiments,
+variables, time ranges, and 2D or 3D nature (3D means multiple atmosphere levels
+or ocean depths are present). See also
+<a class="reference external" href="https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.json">collection description</a>
+and
+<a class="reference external" href="https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.csv">catalog file</a>
+used by <a class="reference external" href="https://intake-esm.readthedocs.io/">Intake-esm</a>.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "16a5f3fb75314819b2325dc03809d832", "version_major": 2, "version_minor": 0}
+{"model_id": "933af7a16540436d9412c60cf4e239d5", "version_major": 2, "version_minor": 0}
 </script></div>
 </div>
 </section>
 </section>
 <section id="notebook-examples">
 <h2>Notebook Examples<a class="headerlink" href="#notebook-examples" title="Permalink to this headline">¶</a></h2>
-<p>A Jupyter Notebook illustrating how to read the LENS data on AWS, and reproducing Figures 2 and 4 from Kay et al. (2015), has been developed. This Notebook and other resources on GitHub will be gradually improved and augmented.</p>
+<p>A Jupyter Notebook illustrating how to read the LENS data on AWS, and
+reproducing Figures 2 and 4 from Kay et al. (2015), has been developed. This
+Notebook and other resources on GitHub will be gradually improved and augmented.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="http://gallery.pangeo.io/repos/NCAR/cesm-lens-aws/notebooks/kay-et-al-2015.v3.html">Rendered (static) version of the Notebook</a></p></li>
 <li><p><a class="reference external" href="https://github.com/NCAR/cesm-lens-aws">Reusable Notebook on GitHub</a></p></li>
@@ -290,19 +326,38 @@ commentsRunWhenDOMLoaded(addUtterances);
 </section>
 <section id="data-citation">
 <h2>Data Citation<a class="headerlink" href="#data-citation" title="Permalink to this headline">¶</a></h2>
-<p>Data are freely available and reusable under the terms of the CC-BY-4.0 license. See <a class="reference external" href="https://www.ucar.edu/terms-of-use/data">Terms of Use</a>. If you use these data, we request that you provide attribution in any derived products. The original, complete LENS dataset and the AWS-hosted subset have different DOIs (Digital Object Identifiers) to reflect their differing scope and format, so please cite whichever version of the dataset used, as well as the Kay et al. (2015) paper:</p>
+<p>Data are freely available and reusable under the terms of the CC-BY-4.0 license.
+See <a class="reference external" href="https://www.ucar.edu/terms-of-use/data">Terms of Use</a>. If you use these
+data, we request that you provide attribution in any derived products. The
+original, complete LENS dataset and the AWS-hosted subset have different DOIs
+(Digital Object Identifiers) to reflect their differing scope and format, so
+please cite whichever version of the dataset used, as well as the Kay et al.
+(2015) paper:</p>
 <ul class="simple">
-<li><p>AWS-hosted subset: <a class="reference external" href="https://doi.org/10.26024/wt24-5j82">doi:10.26024/wt24-5j82</a>
-de La Beaujardière, J., Banihirwe, A., Shih, C.-F., Paul, K., and Hamman, J., (2019), “NCAR CESM LENS Cloud-Optimized Subset,” UCAR/NCAR Computational and Informations Systems Lab</p></li>
+<li><p>AWS-hosted subset:
+<a class="reference external" href="https://doi.org/10.26024/wt24-5j82">doi:10.26024/wt24-5j82</a> de La
+Beaujardière, J., Banihirwe, A., Shih, C.-F., Paul, K., and Hamman, J.,
+(2019), “NCAR CESM LENS Cloud-Optimized Subset,” UCAR/NCAR Computational and
+Informations Systems Lab</p></li>
 <li><p>Original dataset: <a class="reference external" href="https://doi.org/10.5065/d6j101d1">doi:10.5065/d6j101d1</a>
-Kay, J. and Deser, C. (2016). “The Community Earth System Model (CESM) Large Ensemble Project” UCAR/NCAR Climate Data Gateway.</p></li>
-<li><p>Kay et al. (2015) paper: <a class="reference external" href="https://doi.org/10.5065/d6j101d1">doi:10.5065/d6j101d1</a>
-Kay, J. E., Deser, C., Phillips, A., Mai, A., Hannay, C., Strand, G., Arblaster, J., Bates, S., Danabasoglu, G., Edwards, J., Holland, M. Kushner, P., Lamarque, J.-F., Lawrence, D., Lindsay, K., Middleton, A., Munoz, E., Neale, R., Oleson, K., Polvani, L., and M. Vertenstein (2015), “The Community Earth System Model (CESM) Large Ensemble Project: A Community Resource for Studying Climate Change in the Presence of Internal Climate Variability,” Bulletin of the American Meteorological Society, 96, 1333-1349</p></li>
+Kay, J. and Deser, C. (2016). “The Community Earth System Model (CESM) Large
+Ensemble Project” UCAR/NCAR Climate Data Gateway.</p></li>
+<li><p>Kay et al. (2015) paper:
+<a class="reference external" href="https://doi.org/10.5065/d6j101d1">doi:10.5065/d6j101d1</a> Kay, J. E., Deser,
+C., Phillips, A., Mai, A., Hannay, C., Strand, G., Arblaster, J., Bates, S.,
+Danabasoglu, G., Edwards, J., Holland, M. Kushner, P., Lamarque, J.-F.,
+Lawrence, D., Lindsay, K., Middleton, A., Munoz, E., Neale, R., Oleson, K.,
+Polvani, L., and M. Vertenstein (2015), “The Community Earth System Model
+(CESM) Large Ensemble Project: A Community Resource for Studying Climate
+Change in the Presence of Internal Climate Variability,” Bulletin of the
+American Meteorological Society, 96, 1333-1349</p></li>
 </ul>
 </section>
 <section id="contact">
 <h2>Contact<a class="headerlink" href="#contact" title="Permalink to this headline">¶</a></h2>
-<p>If you have questions or want to submit a data request, please reach out to us on <a class="reference external" href="https://github.com/NCAR/cesm-lens-aws/discussions">our GitHub Discussions</a> page or via email: <code class="docutils literal notranslate"><span class="pre">cisl-aws-lens</span></code> at <code class="docutils literal notranslate"><span class="pre">ucar</span></code> dot <code class="docutils literal notranslate"><span class="pre">edu</span></code>.</p>
+<p>If you have questions or want to submit a data request, please reach out to us
+on <a class="reference external" href="https://github.com/NCAR/cesm-lens-aws/discussions">our GitHub Discussions</a>
+page or via email: <code class="docutils literal notranslate"><span class="pre">cisl-aws-lens</span></code> at <code class="docutils literal notranslate"><span class="pre">ucar</span></code> dot <code class="docutils literal notranslate"><span class="pre">edu</span></code>.</p>
 </section>
 </section>
 
