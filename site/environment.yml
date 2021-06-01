@@ -1,0 +1,18 @@
+name: cesm-lens-aws-site
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - jupyterlab
+  - linkify-it-py
+  - myst-nb
+  - nodejs
+  - pandas
+  - pip
+  - pre-commit
+  - sphinx-autobuild
+  - sphinx-book-theme
+  - sphinx-copybutton
+  - sphinx-panels
+  - pip:
+      - ipyaggrid

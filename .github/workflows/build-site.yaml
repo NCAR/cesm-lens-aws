@@ -1,0 +1,43 @@
+name: deploy-site
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  deploy-site:
+    if: github.repository == 'NCAR/cesm-lens-aws'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          channels: conda-forge,nodefaults
+          channel-priority: strict
+          mamba-version: '*'
+          activate-environment: cesm-lens-aws-site
+          auto-update-conda: false
+          python-version: 3.9
+          environment-file: site/environment.yml
+          use-only-tar-bz2: true
+
+      - name: Build
+        run: |
+          bash install-extension.sh
+          conda list
+          cd site
+          make -j4 dirhtml
+      - name: Deploy 🚀
+        if: github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: ./site/_build/dirhtml # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
