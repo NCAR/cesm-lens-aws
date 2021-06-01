@@ -27,11 +27,13 @@ jobs:
           environment-file: site/environment.yml
           use-only-tar-bz2: true
 
-      - name: Build
+      - name: conda post-installation
         run: |
           cd site
           bash install-extension.sh
           conda list
+      - name: Build site
+        run: |
           make -j4 dirhtml
       - name: Deploy 🚀
         if: github.ref == 'refs/heads/main'
