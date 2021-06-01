@@ -29,9 +29,9 @@ jobs:
 
       - name: Build
         run: |
+          cd site
           bash install-extension.sh
           conda list
-          cd site
           make -j4 dirhtml
       - name: Deploy 🚀
         if: github.ref == 'refs/heads/main'
