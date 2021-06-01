@@ -5,6 +5,9 @@ on:
     branches:
       - main
   pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 13 * * 1'
 
 jobs:
   deploy-site:
@@ -19,13 +22,10 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v2
         with:
           channels: conda-forge,nodefaults
-          channel-priority: strict
-          mamba-version: '*'
           activate-environment: cesm-lens-aws-site
           auto-update-conda: false
           python-version: 3.9
           environment-file: site/environment.yml
-          use-only-tar-bz2: true
 
       - name: conda post-installation
         run: |
