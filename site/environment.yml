@@ -14,5 +14,6 @@ dependencies:
   - sphinx-book-theme
   - sphinx-copybutton
   - sphinx-panels
+  - sphinx-comments
   - pip:
       - ipyaggrid

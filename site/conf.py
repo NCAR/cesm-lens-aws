@@ -1,8 +1,10 @@
 # -- Project information -----------------------------------------------------
+import datetime
 
 project = 'CESM1 LENS data on AWS S3'
-copyright = '2021, National Center for Atmospheric Research'
+copyright = f'{datetime.datetime.now().year}, National Center for Atmospheric Research'
 author = 'Science @ Scale Team'
+html_last_updated_fmt = '%b %d, %Y'
 
 
 # -- General configuration ---------------------------------------------------
@@ -14,7 +16,13 @@ extensions = [
     'myst_nb',
     'sphinx_panels',
     'sphinx_copybutton',
+    'sphinx_comments',
 ]
+
+comments_config = {
+    'utterances': {'repo': 'NCAR/cesm-lens-aws', 'optional': 'config', 'label': '💬 comment'},
+    'hypothesis': False,
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -37,6 +45,8 @@ html_title = project
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_logo = '_static/logo.png'
+html_favicon = '_static/favicon.ico'
 
 show_navbar_depth = 3
 html_theme_options = {
