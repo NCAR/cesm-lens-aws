@@ -37,12 +37,14 @@ repos:
     rev: v2.3.0
     hooks:
       - id: prettier
-  - repo: https://github.com/nbQA-dev/nbQA
-    rev: 0.10.0
+  - repo: https://github.com/deathbeds/prenotebook
+    rev: f5bdb72a400f1a56fe88109936c83aa12cc349fa
     hooks:
-      - id: nbqa-black
-        additional_dependencies: [black==21.5b2]
-      - id: nbqa-pyupgrade
-        additional_dependencies: [pyupgrade==2.7.3]
-      - id: nbqa-isort
-        additional_dependencies: [isort==5.8.0]
+      - id: prenotebook
+        args:
+          [
+            '--keep-output',
+            '--keep-metadata',
+            '--keep-execution-count',
+            '--keep-empty',
+          ]
