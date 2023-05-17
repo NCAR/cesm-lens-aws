@@ -34,7 +34,7 @@ git clone https://github.com/NCAR/cesm-lens-aws.git
 cd cesm-lens-aws
 
 # Create the conda environment
-conda env create -f environment.yml
+conda env create -f .binder/environment.yml
 
 # Activate the conda environment
 conda activate cesm-lens-aws
