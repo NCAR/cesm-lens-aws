@@ -13,5 +13,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Lint notebooks 
         uses: ResearchSoftwareActions/EnsureCleanNotebooksAction@1.1
-        #with:
-        #  disable-checks: outputs,execution_count
+        with:
+          disable-checks: outputs,execution_count
