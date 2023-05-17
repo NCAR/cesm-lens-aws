@@ -11,15 +11,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Convert notebooks to Python
-        run: find . -type f -name "*.ipynb" -exec jupyter nbconvert --to python --TemplateExporter.exclude_markdown=true {} \;
-
-      - name: Convert notebooks to Markdown
-        run: find . -type f -name "*.ipynb" -exec jupyter nbconvert --to markdown --TemplateExporter.exclude_code_cell=true {} \;
-
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Lint notebooks 
+        - uses: ResearchSoftwareActions/EnsureCleanNotebooksAction@1.1
+          with:
+            disable-checks: outputs,execution_count
