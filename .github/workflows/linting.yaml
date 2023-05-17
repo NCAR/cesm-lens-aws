@@ -9,6 +9,9 @@ jobs:
     if: github.repository == 'NCAR/cesm-lens-aws'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-      - uses: pre-commit/action@v2.0.0
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Lint notebooks 
+        uses: ResearchSoftwareActions/EnsureCleanNotebooksAction@1.1
+        with:
+          disable-checks: outputs,execution_count
